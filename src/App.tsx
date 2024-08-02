@@ -1,10 +1,17 @@
-import React from 'react';
-import './App.css';
+import React, { Fragment } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { AppRoutes } from './router';
+import { GlobalStyles } from './styles/global.styled';
 
 function App() {
   return (
-    <div>
-    </div>
+    <Fragment>
+      <GlobalStyles />
+      <Router>
+        <GlobalStyles />
+        <AppRoutes />
+      </Router>
+    </Fragment>
   );
 }
 
