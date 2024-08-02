@@ -18,16 +18,18 @@ export const SearchFieldStyled = styled(TextField)(() => ({
   "& .MuiOutlinedInput-root": {
     width: "350px",
     borderRadius: "8px",
-    background: "rgba(255,255,255,0.15)",
+    background: "rgba(255,255,255,0.05)",
 
     "& fieldset": {
       borderColor: "transparent", // Цвет рамки по умолчанию
     },
     "&:hover fieldset": {
       borderColor: "rgba(255,255,255,0.5)", // Цвет рамки при наведении
+      background: "rgba(255,255,255,0.1)",
     },
     "&.Mui-focused fieldset": {
       borderColor: "rgba(255,255,255,0.5)", // Цвет рамки при фокусе
+      background: "rgba(255,255,255,0.1)",
     },
   },
 

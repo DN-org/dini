@@ -40,4 +40,21 @@ export const GlobalStyles = createGlobalStyle({
     fontWeight: '400',
     opacity: '0.7',
   },
+
+  '::-webkit-scrollbar': {
+    width: '12px',
+    height: '12px',
+  },
+  '::-webkit-scrollbar-track': {
+    background: '#2F2F2F',
+    borderRadius: '6px',
+  },
+  '::-webkit-scrollbar-thumb': {
+    background: '#888',
+    borderRadius: '6px',
+    border: '3px solid #2F2F2F',
+  },
+  '::-webkit-scrollbar-thumb:hover': {
+    background: '#555',
+  },
 });

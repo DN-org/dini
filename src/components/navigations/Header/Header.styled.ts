@@ -8,6 +8,7 @@ export const HeaderStyled = styled("header")(() => ({
 
   height: "100px",
   width: "100%",
+  minWidth: "1280px",
 
   position: "fixed",
   zIndex: "100",
@@ -15,8 +16,9 @@ export const HeaderStyled = styled("header")(() => ({
   top: "0",
 
   display: "grid",
-  gridTemplateColumns: "50px 150px 500px 350px 100px",
+  gridTemplateColumns: "50px 150px 430px 350px 100px",
   columnGap: "50px",
+
   alignContent: "center",
   justifyContent: "center",
   alignItems: "center",
