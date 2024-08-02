@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 const TextStyles = {
-  fontFamily: 'Open Sans, sans-serif',
+  fontFamily: 'Play, sans-serif',
   fontWeight: '600',
   color: '#fff',
   margin: '0',
