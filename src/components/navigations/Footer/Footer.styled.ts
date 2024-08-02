@@ -8,7 +8,7 @@ export const FooterStyled = styled('footer')(() => ({
     display: 'grid',
     gridTemplateColumns: '1fr 0.7fr',
     alignItems: 'center'
-,}))
+}))
 
 export const FooterLogoStyled = styled('img')(() => ({
     width: '200px',

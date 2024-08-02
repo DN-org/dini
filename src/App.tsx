@@ -1,7 +1,7 @@
-import React, { Fragment } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import { AppRoutes } from './router';
-import { GlobalStyles } from './styles/global.styled';
+import React, { Fragment } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import { AppRoutes } from "./router";
+import { GlobalStyles } from "./styles/global.styled";
 
 function App() {
   return (
@@ -14,5 +14,4 @@ function App() {
     </Fragment>
   );
 }
-
 export default App;
