@@ -23,7 +23,7 @@ export const FooterLinksStyled = styled('div')(() => ({
 }))
 
 export const FooterLinkStyled = styled(Link)(() => ({
-    fontFamily: 'Open Sans',
+    fontFamily: 'Play',
     fontSize: '22px',
     lineHeight: '20px',
     fontWeight: '400',
