@@ -7,7 +7,9 @@ export const FooterStyled = styled('footer')(() => ({
     padding: '50px 200px',
     display: 'grid',
     gridTemplateColumns: '1fr 0.7fr',
-    alignItems: 'center'
+    alignItems: 'center',
+    background: 'black',
+    boxShadow: "15px 0px 20px 11px rgba(255, 255, 255, 0.1)",
 }))
 
 export const FooterLogoStyled = styled('img')(() => ({
@@ -22,7 +24,7 @@ export const FooterLinksStyled = styled('div')(() => ({
 
 export const FooterLinkStyled = styled(Link)(() => ({
     fontFamily: 'Open Sans',
-    fontSize: '20px',
+    fontSize: '22px',
     lineHeight: '20px',
     fontWeight: '400',
     color: '#f1f1f1',
