@@ -22,7 +22,7 @@ export const GlobalStyles = createGlobalStyle({
     boxSizing: "border-box",
   },
   body: {
-    marginTop: "15vh",
+    marginTop: "100px",
     fontFamily: "'Arial', sans-serif",
     backgroundColor: "#1F1F1F",
     color: "white",
