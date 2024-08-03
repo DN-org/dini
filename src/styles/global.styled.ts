@@ -14,7 +14,6 @@ export const GlobalStyles = createGlobalStyle({
     boxSizing: 'border-box',
     margin: 0,
     padding: 0,
-    
   },
   '*::before': {
     boxSizing: 'border-box',
@@ -39,5 +38,17 @@ export const GlobalStyles = createGlobalStyle({
     lineHeight: '20px',
     fontWeight: '400',
     opacity: '0.7',
+  },
+  a:{
+    ...TextStyles
+  },
+  button:{
+    ...TextStyles
+  },
+  input:{
+    ...TextStyles
+  },
+  "::placeholder":{
+    ...TextStyles
   },
 });
