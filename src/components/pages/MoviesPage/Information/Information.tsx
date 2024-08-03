@@ -1,13 +1,17 @@
-import React from 'react';
+import React from "react";
 import {
   InformationCont,
   FilmPostersCont,
+  FilmImgCont,
   ButtonAddCategory,
+  ButtonAddCategoryText,
   FilmInformationCont,
   NameFilm,
   RatingCont,
   Rating,
+  RatingAll,
   StarCont,
+  StarsConts,
   StarNumber,
   AnotherRatingCont,
   AnotherRating,
@@ -16,35 +20,66 @@ import {
   RolesCont,
   SecondFilmInformationCont,
   DescriptionCont,
-} from './Information.styled';
+  CarouselCont,
+} from "./Information.styled";
 //SVG
 import {
   SvgStar,
   SvgKinoPoisk,
   SvgIMDb,
   SvgFolder,
-} from '../../../../images/SvgMoviesPage';
+} from "../../../../images/SvgMoviesPage";
+
+import Carousel from "../../../Carousel/CarouselActors/CarouselActors";
 
 const Information: React.FC = () => {
   return (
     <InformationCont>
       <FilmPostersCont>
-        <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/10900341/39e6ff92-f2c0-4fd7-b2e3-9785890bd683/300x450" />
-        <ButtonAddCategory>{SvgFolder} Добавить котегорию</ButtonAddCategory>
+        <FilmImgCont>
+          <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/10900341/39e6ff92-f2c0-4fd7-b2e3-9785890bd683/300x450" />
+        </FilmImgCont>
+
+        <ButtonAddCategory>
+          <ButtonAddCategoryText>
+            {SvgFolder}
+            <p>Добавить котегорию</p>
+          </ButtonAddCategoryText>
+        </ButtonAddCategory>
       </FilmPostersCont>
 
       <FilmInformationCont>
         <NameFilm>
-          <h2>ТораДора!</h2>
-          <h2>(сериал 2008 – 2009)</h2>
+          <h2>ТораДора! (сериал 2008 – 2009)</h2>
         </NameFilm>
 
         <RatingCont>
-          <Rating>6.4</Rating>
+          <div>
+            <Rating>6.4</Rating>
+            <RatingAll>1488 оценок</RatingAll>
+          </div>
 
           <StarCont>
-            {SvgStar}
-            <StarNumber>1</StarNumber>
+            <StarsConts>
+              {SvgStar}
+              <StarNumber>1</StarNumber>
+            </StarsConts>
+            <StarsConts>
+              {SvgStar}
+              <StarNumber>2</StarNumber>
+            </StarsConts>
+            <StarsConts>
+              {SvgStar}
+              <StarNumber>3</StarNumber>
+            </StarsConts>
+            <StarsConts>
+              {SvgStar}
+              <StarNumber>4</StarNumber>
+            </StarsConts>
+            <StarsConts>
+              {SvgStar}
+              <StarNumber>5</StarNumber>
+            </StarsConts>
           </StarCont>
 
           <AnotherRatingCont>
@@ -57,6 +92,7 @@ const Information: React.FC = () => {
               <p>6.8</p>
             </AnotherRating>
           </AnotherRatingCont>
+          
         </RatingCont>
 
         <AboutFilm>
@@ -110,6 +146,9 @@ const Information: React.FC = () => {
 
         <RolesCont>
           <h2>В Главных ролях</h2>
+          <CarouselCont>
+          <Carousel/> 
+          </CarouselCont>
         </RolesCont>
       </FilmInformationCont>
 
@@ -122,7 +161,10 @@ const Information: React.FC = () => {
             влюбляется в Китамару. Они решают объединить свои усилия, но может
             быть они просто не в тех влюбились?
           </p>
+         
         </DescriptionCont>
+        <div>
+        </div>
       </SecondFilmInformationCont>
     </InformationCont>
   );
