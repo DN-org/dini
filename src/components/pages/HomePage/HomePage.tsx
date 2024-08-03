@@ -1,6 +1,10 @@
 import React from 'react';
+import StarRating from '../../StarRating/StarRating';
 
 const HomePage: React.FC = () => {
+  const handleRatingChange = (rating: number) => {
+    console.log("Current Rating:", rating);
+  };
   return (
     <div>
       <header>
@@ -16,6 +20,9 @@ const HomePage: React.FC = () => {
       <footer>
         <p>&copy; 2024 My Website</p>
       </footer>
+
+      <StarRating initialRating={3} onRatingChange={handleRatingChange} />
+      
     </div>
   );
 };

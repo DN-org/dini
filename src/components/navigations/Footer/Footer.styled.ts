@@ -10,13 +10,12 @@ export const FooterStyled = styled("footer")(() => ({
   boxShadow: "15px 0px 20px 11px rgba(255, 255, 255, 0.1)",
   width: '100%',
   height: '100px',
-  padding: '0 320px'
+  padding: '0 100px',
 }));
 
 export const FooterContainerStyled = styled("div")(() => ({
   display: "flex",
   bottom: "0",
-  
 }));
 
 export const FooterLogoStyled = styled("img")(() => ({
@@ -26,7 +25,7 @@ export const FooterLogoStyled = styled("img")(() => ({
 export const FooterLinksStyled = styled("div")(() => ({
   display: "grid",
   gridTemplateColumns: "repeat(5, 1fr)",
-  columnGap: "50px",
+  columnGap: "80px",
 }));
 
 export const FooterLinkStyled = styled(Link)(() => ({
