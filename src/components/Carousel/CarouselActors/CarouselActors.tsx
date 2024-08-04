@@ -2,10 +2,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import { ContCarousel, ImgCont } from "./CarouselActors.styled";
-import "./CarouselArrows.css";
+import { ArrowsR, ArrowsL, ContCarousel, ImgCont } from "./CarouselActors.styled";
 
-const SvgArrowsL = (
+const SvgArrowL = (
   <svg
     stroke="currentColor"
     fill="currentColor"
@@ -38,25 +37,25 @@ interface ArrowProps {
 }
 
 const CustomNextArrow: React.FC<ArrowProps> = ({ onClick }) => (
-  <button type="button" className="Arrows ArrowsR" onClick={onClick}>
-    {SvgArrowR}
-  </button>
+  <ArrowsR type="button" onClick={onClick}>
+  {SvgArrowR}
+</ArrowsR>
 );
 
 const CustomPrevArrow: React.FC<ArrowProps> = ({ onClick }) => (
-  <button type="button" className="Arrows ArrowsL" onClick={onClick}>
-    {SvgArrowsL}
-  </button>
+  <ArrowsL type="button" onClick={onClick}>
+    {SvgArrowL}
+  </ArrowsL>
 );
 
 const Carousel: React.FC = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 1000,
+    speed: 800,
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 4000,
     arrows: true,
     nextArrow: <CustomNextArrow />,
@@ -90,6 +89,7 @@ const Carousel: React.FC = () => {
       <img src='https://avatars.mds.yandex.net/get-kinopoisk-image/4303601/02d6aeb1-bf18-4774-aa63-cb8ecab02983/280x420'/>
       <p>Эри Китамура</p>
     </ImgCont>
+
     </Slider>
     </ContCarousel>
   );

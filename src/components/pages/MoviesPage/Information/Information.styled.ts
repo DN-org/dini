@@ -59,13 +59,14 @@ export const NameFilm = styled('div')(() => ({
 
 export const RatingCont = styled('div')(() => ({
   display: 'grid',
-  gridTemplateColumns: '0.6fr 1fr 0.2fr',
-  padding: '10px 0 10px 0',
+  gridTemplateColumns: '150px 1fr 0.2fr',
+  alignItems: 'center',
+
   width: '550px'
 }));
 
 export const Rating = styled('H2')(() => ({
-
+  fontSize: '40px'
 }));
 
 export const RatingAll = styled('p')(() => ({

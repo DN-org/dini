@@ -1,4 +1,6 @@
 import React from "react";
+
+//styles
 import {
   InformationCont,
   FilmPostersCont,
@@ -22,6 +24,7 @@ import {
   DescriptionCont,
   CarouselCont,
 } from "./Information.styled";
+
 //SVG
 import {
   SvgStar,
@@ -30,7 +33,9 @@ import {
   SvgFolder,
 } from "../../../../images/SvgMoviesPage";
 
+//components
 import Carousel from "../../../Carousel/CarouselActors/CarouselActors";
+import StarRating from "../../../StarRating/StarRating";
 
 const Information: React.FC = () => {
   return (
@@ -61,24 +66,9 @@ const Information: React.FC = () => {
 
           <StarCont>
             <StarsConts>
-              {SvgStar}
-              <StarNumber>1</StarNumber>
-            </StarsConts>
-            <StarsConts>
-              {SvgStar}
-              <StarNumber>2</StarNumber>
-            </StarsConts>
-            <StarsConts>
-              {SvgStar}
-              <StarNumber>3</StarNumber>
-            </StarsConts>
-            <StarsConts>
-              {SvgStar}
-              <StarNumber>4</StarNumber>
-            </StarsConts>
-            <StarsConts>
-              {SvgStar}
-              <StarNumber>5</StarNumber>
+              <StarRating/>
+              {/* {SvgStar}
+              <StarNumber>1</StarNumber> */}
             </StarsConts>
           </StarCont>
 

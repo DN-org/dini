@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { StarRatingStyled, StarIcon } from "./StarRating.styled";
+import { StarRatingStyled, StarCont, StarIcon } from "./StarRating.styled";
 
 interface StarRatingProps {
   initialRating?: number;
@@ -31,7 +31,8 @@ const StarRating: React.FC<StarRatingProps> = ({
   return (
     <StarRatingStyled>
       {[1, 2, 3, 4, 5].map((star) => (
-        <StarIcon
+        <StarCont>
+          <StarIcon
           key={star}
           $filled={star <= (hover || rating)}
           onClick={() => handleClick(star)}
@@ -40,6 +41,7 @@ const StarRating: React.FC<StarRatingProps> = ({
         >
           ★
         </StarIcon>
+        </StarCont>
       ))}
     </StarRatingStyled>
   );
