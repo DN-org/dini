@@ -25,7 +25,7 @@ const Header: React.FC = () => {
       </Link>
       <div />
       <SearchField />
-      <HeaderAuthLinkStyled to="/">Войти</HeaderAuthLinkStyled>
+      <HeaderAuthLinkStyled to="/Profile">Войти</HeaderAuthLinkStyled>
     </HeaderStyled>
   );
 };
