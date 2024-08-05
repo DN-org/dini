@@ -11,7 +11,7 @@ export const CustomButtonStyled = styled(Button)(() => ({
     textTransform: 'none',
     lineHeight: '20px',
     fontSize: '16px',
-    padding: '15px 50px',
+    padding: '10px 50px',
     fontWeight: 'bold',
     
     "&:hover": {
