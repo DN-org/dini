@@ -1,9 +1,4 @@
-import { SvgKinoPoisk, SvgIMDb, SvgFolder } from './SvgMoviesPage';
 import styled from 'styled-components';
-
-export const SvgStarStyled = styled('svg')(() => ({
-  color: 'yellow',
-}));
 
 export const SvgKinoPoiskStyled = styled('svg')(() => ({
 

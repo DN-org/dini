@@ -5,7 +5,7 @@ import {
   InformationCont,
   FilmPostersCont,
   FilmImgCont,
-  ButtonAddCategory,
+  ButtonAddCategoryCont,
   ButtonAddCategoryText,
   FilmInformationCont,
   NameFilm,
@@ -13,8 +13,6 @@ import {
   Rating,
   RatingAll,
   StarCont,
-  StarsConts,
-  StarNumber,
   AnotherRatingCont,
   AnotherRating,
   AboutFilm,
@@ -27,35 +25,41 @@ import {
 
 //SVG
 import {
-  SvgStar,
   SvgKinoPoisk,
   SvgIMDb,
   SvgFolder,
-} from "../../../../images/SvgMoviesPage";
+} from "../../../../images/SvgMoviesPage/SvgMoviesPage";
 
 //components
 import Carousel from "../../../Carousel/CarouselActors/CarouselActors";
 import StarRating from "../../../StarRating/StarRating";
+import CustomButton from "../../../CustomButton/CustomButton";
 
 const Information: React.FC = () => {
   return (
     <InformationCont>
+      
       <FilmPostersCont>
         <FilmImgCont>
-          <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/10900341/39e6ff92-f2c0-4fd7-b2e3-9785890bd683/300x450" />
+          <img
+            src="https://avatars.mds.yandex.net/get-kinopoisk-image/10900341/39e6ff92-f2c0-4fd7-b2e3-9785890bd683/300x450"
+            alt=""
+          />
         </FilmImgCont>
 
-        <ButtonAddCategory>
-          <ButtonAddCategoryText>
-            {SvgFolder}
-            <p>Добавить котегорию</p>
-          </ButtonAddCategoryText>
-        </ButtonAddCategory>
+        <ButtonAddCategoryCont>
+          <CustomButton>
+            <ButtonAddCategoryText>
+              {SvgFolder}
+              <p>Добавить котегорию</p>
+            </ButtonAddCategoryText>
+          </CustomButton>
+        </ButtonAddCategoryCont>
       </FilmPostersCont>
 
       <FilmInformationCont>
         <NameFilm>
-          <h2>ТораДора! (сериал 2008 – 2009)</h2>
+          <h2>ТораДора! (сериал 2008)</h2>
         </NameFilm>
 
         <RatingCont>
@@ -65,11 +69,7 @@ const Information: React.FC = () => {
           </div>
 
           <StarCont>
-            <StarsConts>
-              <StarRating/>
-              {/* {SvgStar}
-              <StarNumber>1</StarNumber> */}
-            </StarsConts>
+            <StarRating />
           </StarCont>
 
           <AnotherRatingCont>
@@ -82,7 +82,6 @@ const Information: React.FC = () => {
               <p>6.8</p>
             </AnotherRating>
           </AnotherRatingCont>
-          
         </RatingCont>
 
         <AboutFilm>
@@ -135,9 +134,9 @@ const Information: React.FC = () => {
         </AboutFilm>
 
         <RolesCont>
-          <h2>В Главных ролях</h2>
+          <h3>В главных ролях</h3>
           <CarouselCont>
-          <Carousel/> 
+            <Carousel />
           </CarouselCont>
         </RolesCont>
       </FilmInformationCont>
@@ -146,16 +145,19 @@ const Information: React.FC = () => {
         <DescriptionCont>
           <h3>Описание</h3>
           <p>
-            Семнадцатилетний парень Рюдзи, которого все боятся из-за страшного
-            взгляда, влюбляется в одноклассницу Минори, а его соседка Тайга
-            влюбляется в Китамару. Они решают объединить свои усилия, но может
-            быть они просто не в тех влюбились?
+            Доктор Райан Стоун, блестящий специалист в области медицинского
+            инжиниринга, отправляется в свою первую космическую миссию под
+            командованием ветерана астронавтики Мэтта Ковальски, для которого
+            этот полет - последний перед отставкой. Но во время, казалось бы,
+            рутинной работы за бортом случается катастрофа. Шаттл уничтожен, а
+            Стоун и Ковальски остаются совершенно одни; они находятся в связке
+            друг с другом, и все, что они могут, - это двигаться по орбите в
+            абсолютно черном пространстве без всякой связи с Землей и какой-либо
+            надежды на спасение.
           </p>
-         
         </DescriptionCont>
-        <div>
-        </div>
       </SecondFilmInformationCont>
+
     </InformationCont>
   );
 };
