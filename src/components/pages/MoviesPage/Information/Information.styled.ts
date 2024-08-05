@@ -4,8 +4,6 @@ export const InformationCont = styled("div")(() => ({
   display: "grid",
   gridTemplateColumns: "0.6fr 1fr",
   gridTemplateRows: "1fr 0.4fr",
-  backgroundColor: "black",
-  padding: "40px 0 0 0",
 }));
 
 export const FilmPostersCont = styled("div")(() => ({

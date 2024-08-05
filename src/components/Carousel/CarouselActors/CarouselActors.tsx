@@ -30,6 +30,7 @@ const CustomPrevArrow: React.FC<ArrowProps> = ({ onClick }) => (
   </ArrowsL>
 );
 
+
 const Carousel: React.FC = () => {
   const settings = {
     dots: false,
