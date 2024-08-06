@@ -11,6 +11,7 @@ import {
 //Modal
 import Modal from "../../../PopUp/Modal";
 import Test from "../../../PopUp/Test/Test";
+import CustomButton from "../../../CustomButton/CustomButton";
 
 // Test
 const ProductAdmin = () => <div>Player_1</div>;
@@ -31,17 +32,17 @@ const Player: React.FC = () => {
         <h3>Смотреть</h3>
 
         <AnotherPlayerCont>
-          <button data-name="Player_1" onClick={handleTab}>
+          <CustomButton data-name="Player_1" onClick={handleTab}>
             <h4> Плеер 1</h4>
-          </button>
+          </CustomButton>
 
-          <button data-name="Player_2" onClick={handleTab}>
+          <CustomButton data-name="Player_2" onClick={handleTab}>
             <h4> Плеер 2</h4>
-          </button>
+          </CustomButton>
 
-          <button data-name="Player_3" onClick={handleTab}>
+          <CustomButton data-name="Player_3" onClick={handleTab}>
             <h4> Плеер 3</h4>
-          </button>
+          </CustomButton>
         </AnotherPlayerCont>
       </OtherPlayerCont>
 
