@@ -1,4 +1,3 @@
-import { AnotherRating } from './../Information/Information.styled';
 import styled from "styled-components";
 
 export const PlayerCont = styled('div')(() => ({

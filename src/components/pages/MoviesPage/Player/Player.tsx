@@ -8,13 +8,18 @@ import {
   PlayerPlay,
 } from "./Player.styled";
 
-// dummy components for illustration
+//Modal
+import Modal from "../../../PopUp/Modal";
+import Test from "../../../PopUp/Test/Test";
+
+// Test
 const ProductAdmin = () => <div>Player_1</div>;
 const ClientNumber = () => <div>Player_2</div>;
 const AnotherComponent = () => <div>Player_3</div>;
 
 const Player: React.FC = () => {
   const [activeTab, setActiveTab] = useState("Player_1");
+  const [modalActive, setModalActive] = useState(false);
 
   const handleTab = (e: React.MouseEvent<HTMLButtonElement>) => {
     setActiveTab(e.currentTarget.getAttribute("data-name") || "Player_1");
@@ -45,6 +50,10 @@ const Player: React.FC = () => {
         {activeTab === "Player_2" && <ClientNumber />}
         {activeTab === "Player_3" && <AnotherComponent />}
       </PlayerPlay>
+      <button onClick={() => setModalActive(true)}>Добавить</button>
+      <Modal active={modalActive} setActive={setModalActive}>
+        <Test/>
+      </Modal>
     </PlayerCont>
   );
 };
