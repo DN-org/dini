@@ -2,165 +2,143 @@ import React from "react";
 
 //styles
 import {
-  InformationCont,
-  FilmPostersCont,
-  FilmImgCont,
+  InformationStyled,
+  PosterPlusButtonContainer,
+  PosterContainer,
   ButtonAddCategoryCont,
   ButtonAddCategoryText,
-  FilmInformationCont,
-  NameFilm,
-  RatingCont,
+  InformationContainer,
+  RatingContainer,
   Rating,
-  RatingAll,
+  RatingCount,
   StarCont,
-  AnotherRatingCont,
+  RatingChildContainer,
   AnotherRating,
-  AboutFilm,
-  AboutFilmConts,
-  RolesCont,
-  SecondFilmInformationCont,
-  DescriptionCont,
+  AboutStyled,
+  AboutChildContainer,
+  MainRolesContainer,
   CarouselCont,
-  SvgCont,
+  SvgContainer,
+  ButtonAddCategoryStyled,
 } from "./Information.styled";
 
 //SVG
-
+import CreateNewFolderOutlinedIcon from "@mui/icons-material/CreateNewFolderOutlined";
 
 //components
 import Carousel from "../../../Carousel/CarouselActors/CarouselActors";
 import StarRating from "../../../StarRating/StarRating";
-import CustomButton from "../../../CustomButton/CustomButton";
-import SVG_IMDb from "../../../../images/SVGIMDb";
 import SVGIMDb from "../../../../images/SVGIMDb";
 import SVGKinopoisk from "../../../../images/SVGKinopoisk";
 
-
 const Information: React.FC = () => {
   return (
-    <InformationCont>
-      <FilmPostersCont>
-        <FilmImgCont>
+    <InformationStyled>
+      <PosterPlusButtonContainer>
+        <PosterContainer>
           <img
             src="https://avatars.mds.yandex.net/get-kinopoisk-image/10900341/39e6ff92-f2c0-4fd7-b2e3-9785890bd683/300x450"
             alt=""
           />
-        </FilmImgCont>
+        </PosterContainer>
 
         <ButtonAddCategoryCont>
-          <CustomButton>
+          <ButtonAddCategoryStyled>
             <ButtonAddCategoryText>
-              {/* {SvgFolder} */}
-              <p>Добавить котегорию</p>
+              <CreateNewFolderOutlinedIcon />
+              Добавить котегорию
             </ButtonAddCategoryText>
-          </CustomButton>
+          </ButtonAddCategoryStyled>
         </ButtonAddCategoryCont>
-      </FilmPostersCont>
+      </PosterPlusButtonContainer>
 
-      <FilmInformationCont>
-        <NameFilm>
-          <h2>ТораДора! (сериал 2008)</h2>
-        </NameFilm>
+      <InformationContainer>
+        <h1>ТораДора! (сериал 2008)</h1>
 
-        <RatingCont>
+        <RatingContainer>
           <div>
             <Rating>6.4</Rating>
-            <RatingAll>1488 оценок</RatingAll>
+            <RatingCount>1488 оценок</RatingCount>
           </div>
 
           <StarCont>
             <StarRating />
           </StarCont>
 
-          <AnotherRatingCont>
+          <RatingChildContainer>
             <AnotherRating>
-              <SvgCont><SVGIMDb/></SvgCont>
+              <SvgContainer>
+                <SVGIMDb />
+              </SvgContainer>
 
               <p>7.1</p>
             </AnotherRating>
             <AnotherRating>
-              <SvgCont>
-                <SVGKinopoisk/>
-              </SvgCont>
+              <SvgContainer>
+                <SVGKinopoisk />
+              </SvgContainer>
               <p>6.8</p>
             </AnotherRating>
-          </AnotherRatingCont>
-        </RatingCont>
+          </RatingChildContainer>
+        </RatingContainer>
 
-        <AboutFilm>
+        <AboutStyled>
           <h3>О сериале</h3>
 
-          <AboutFilmConts>
+          <AboutChildContainer>
             <p>Год производства</p>
             <p>2008 (1 сезон)</p>
-          </AboutFilmConts>
+          </AboutChildContainer>
 
-          <AboutFilmConts>
+          <AboutChildContainer>
             <p>Страна</p>
             <p>Япония</p>
-          </AboutFilmConts>
+          </AboutChildContainer>
 
-          <AboutFilmConts>
+          <AboutChildContainer>
             <p>Жанр</p>
             <p>аниме, мультфильм, мелодрама, комедия</p>
-          </AboutFilmConts>
+          </AboutChildContainer>
 
-          <AboutFilmConts>
+          <AboutChildContainer>
             <p>Режиссер</p>
             <p>Тацуюки Нагаи, Кацуси Сакураби, Тору Исида, ...</p>
-          </AboutFilmConts>
+          </AboutChildContainer>
 
-          <AboutFilmConts>
+          <AboutChildContainer>
             <p>Сценарий</p>
             <p>Тацуто Хигути, Мари Окада, Дзюнко Окадзаки, ...</p>
-          </AboutFilmConts>
+          </AboutChildContainer>
 
-          <AboutFilmConts>
+          <AboutChildContainer>
             <p>Продюсер</p>
             <p>Синъити Икэда, Мунэюки Канбэ, Юдзи Мацукура, ...</p>
-          </AboutFilmConts>
+          </AboutChildContainer>
 
-          <AboutFilmConts>
+          <AboutChildContainer>
             <p>Возраст</p>
             <p>18+</p>
-          </AboutFilmConts>
+          </AboutChildContainer>
 
-          <AboutFilmConts>
+          <AboutChildContainer>
             <p>Рейтинг MPAA</p>
             <p>R</p>
-          </AboutFilmConts>
+          </AboutChildContainer>
 
-          <AboutFilmConts>
+          <AboutChildContainer>
             <p>Время серии</p>
             <p>25 мин</p>
-          </AboutFilmConts>
-        </AboutFilm>
+          </AboutChildContainer>
+        </AboutStyled>
 
-        <RolesCont>
+        <MainRolesContainer>
           <h3>В главных ролях</h3>
           <CarouselCont>
             <Carousel />
           </CarouselCont>
-        </RolesCont>
-      </FilmInformationCont>
-
-      <SecondFilmInformationCont>
-        <DescriptionCont>
-          <h3>Описание</h3>
-          <p>
-            Доктор Райан Стоун, блестящий специалист в области медицинского
-            инжиниринга, отправляется в свою первую космическую миссию под
-            командованием ветерана астронавтики Мэтта Ковальски, для которого
-            этот полет - последний перед отставкой. Но во время, казалось бы,
-            рутинной работы за бортом случается катастрофа. Шаттл уничтожен, а
-            Стоун и Ковальски остаются совершенно одни; они находятся в связке
-            друг с другом, и все, что они могут, - это двигаться по орбите в
-            абсолютно черном пространстве без всякой связи с Землей и какой-либо
-            надежды на спасение.
-          </p>
-        </DescriptionCont>
-      </SecondFilmInformationCont>
-    </InformationCont>
+        </MainRolesContainer>
+      </InformationContainer>
+    </InformationStyled>
   );
 };
 

@@ -5,7 +5,7 @@ import { Typography } from "@mui/material";
 export const StarRatingStyled = styled.div`
   display: grid;
   grid-template-columns: repeat(5,1fr);
-
+  height: 70px;
 `;
 
 export const StarCont = styled.div`
@@ -20,6 +20,7 @@ interface StarIconProps {
 
 export const StarIcon = muiStyled(Typography)<StarIconProps>(
   ({ $filled, theme }) => ({
+    lineHeight: '70px',
     userSelect: 'none',
     fontSize: "70px",
     cursor: "pointer",

@@ -1,36 +1,46 @@
 import styled from "styled-components";
+import CustomButton from "../../../CustomButton/CustomButton";
 
-export const InformationCont = styled("div")(() => ({
+export const InformationStyled = styled("div")(() => ({
   display: "grid",
-  gridTemplateColumns: "0.6fr 1fr",
-  gridTemplateRows: "1fr 0.4fr",
+  gridTemplateColumns: "1fr 1fr",
+  padding: '0 50px',
+  columnGap: '50px',
 }));
 
-export const FilmPostersCont = styled("div")(() => ({
-  gridArea: "1/1/2/2",
+export const PosterPlusButtonContainer = styled("div")(() => ({
+  display: 'flex',
+  flexDirection: 'column',  
+  rowGap: '50px',
 }));
 
-export const FilmImgCont = styled("div")(() => ({
-  width: "80%",
-  margin: "auto",
-  img: {
-    width: "100%",
-    borderRadius: "15px",
-  },
+export const PosterContainer = styled("div")(() => ({
+  img:{
+    display: 'flex',
+    justifyContent: 'center',
+    width: '100%',
+    border: '1px solid rgba(255, 255, 255, .15)',
+    borderRadius: '25px',
+  }
 }));
 
 export const ButtonAddCategoryCont = styled("div")(() => ({
-  display: "block",
-  width: "390px",
-  margin: "10px auto",
+  display: "flex",
+  justifyContent: 'center',
 }));
 
-export const ButtonAddCategoryText = styled("div")(() => ({
+export const ButtonAddCategoryStyled = styled(CustomButton)(() => ({
+  display: 'flex',
+  width: '100%',
+  height: 'auto'
+}));
+
+export const ButtonAddCategoryText = styled("p")(() => ({
   display: "grid",
-  gridTemplateColumns: "0.4fr 1fr",
+  gridTemplateColumns: "0.1fr 1fr",
+  columnGap: '5px',
   justifyItems: "center",
   alignItems: "center",
-  gridColumnGap: "10px",
   div: {
     justifySelf: "end",
   },
@@ -39,15 +49,12 @@ export const ButtonAddCategoryText = styled("div")(() => ({
   },
 }));
 
-export const FilmInformationCont = styled("div")(() => ({
-  gridArea: "1/2/2/3",
+export const InformationContainer = styled("div")(() => ({
+  display: 'grid',
+  rowGap: '25px',
 }));
 
-export const NameFilm = styled("div")(() => ({
-  padding: "0 0 10px 0",
-}));
-
-export const RatingCont = styled("div")(() => ({
+export const RatingContainer = styled("div")(() => ({
   display: "grid",
   gridTemplateColumns: "150px 1fr 0.2fr",
   alignItems: "center",
@@ -59,7 +66,7 @@ export const Rating = styled("H2")(() => ({
   fontSize: "40px",
 }));
 
-export const RatingAll = styled("p")(() => ({}));
+export const RatingCount = styled("p")(() => ({}));
 
 export const StarCont = styled("div")(() => ({
   display: "grid",
@@ -67,58 +74,48 @@ export const StarCont = styled("div")(() => ({
   width: "80%",
 }));
 
-export const SvgCont = styled("div")(() => ({
+export const SvgContainer = styled("div")(() => ({
   display: 'flex',  
-  height: '30px',
-  width: '30px',
   justifyContent: 'center',
   alignContent: 'center',
-  alignItems: 'center'
+  alignItems: 'center',
+
+  height: '25px',
+  width: '25px',
 }));
 
-export const AnotherRatingCont = styled("div")(() => ({
-  display: 'flex',
+export const RatingChildContainer = styled("div")(() => ({
+  display: 'grid',
   alignContent: 'center',
-  flexDirection: 'column'
+  rowGap: '5px',
 }));
 
 export const AnotherRating = styled("div")(() => ({
-  display: 'flex',
-  flexDirection: 'row',
+  display: 'grid',
+  gridTemplateColumns: '1fr 1fr',
   justifyContent: 'center',
-  alignContent: 'center',
-  alignItems: 'center'
+  alignItems: 'center',
 }));
 
-export const AboutFilm = styled("div")(() => ({
-  padding: "0px 0 10px 0",
-
-  h3: {
-    padding: "5px 0",
-  },
+export const AboutStyled = styled("div")(() => ({
+  display: 'grid',
+  gridTemplateRows: 'repeat(auto, 1fr)',
+  rowGap: '15px',
 }));
 
-export const AboutFilmConts = styled("div")(() => ({
+export const AboutChildContainer = styled("div")(() => ({
   display: "grid",
   gridTemplateColumns: "0.3fr 1fr",
-  padding: "2px 0",
 }));
 
-export const RolesCont = styled("div")(() => ({
-  padding: "10px 0 0px",
+export const MainRolesContainer = styled("div")(() => ({
+  display: 'grid',
+  rowGap: '25px'
 }));
 
 export const CarouselCont = styled("div")(() => ({
-  padding: "10px 0 20px",
+  
 }));
 
-export const SecondFilmInformationCont = styled("div")(() => ({
-  gridArea: "2/1/3/3",
-  padding: "0px 50px",
-}));
 
-export const DescriptionCont = styled("div")(() => ({
-  h3: {
-    padding: "15px 0",
-  },
-}));
+
