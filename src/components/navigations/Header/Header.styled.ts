@@ -17,7 +17,7 @@ export const HeaderStyled = styled("header")(() => ({
   top: "0",
 
   display: "grid",
-  gridTemplateColumns: "50px 150px 430px 350px 100px",
+  gridTemplateColumns: "50px 150px 250px 350px 200px",
   columnGap: "50px",
 
   alignContent: "center",
@@ -39,4 +39,7 @@ export const HeaderLogoStyled = styled(SVGLogoWhite)(() => ({
 export const HeaderAuthLinkStyled = styled(Link)(() => ({
   color: "rgba(255,255,255,0.6)",
   textDecoration: "none",
+  display: 'flex',
+  justifyContent: 'center',
+  alignSelf: 'center'
 }));
