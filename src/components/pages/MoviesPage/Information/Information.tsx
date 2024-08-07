@@ -21,24 +21,24 @@ import {
   SecondFilmInformationCont,
   DescriptionCont,
   CarouselCont,
+  SvgCont,
 } from "./Information.styled";
 
 //SVG
-import {
-  SvgKinoPoisk,
-  SvgIMDb,
-  SvgFolder,
-} from "../../../../images/SvgMoviesPage/SvgMoviesPage";
+
 
 //components
 import Carousel from "../../../Carousel/CarouselActors/CarouselActors";
 import StarRating from "../../../StarRating/StarRating";
 import CustomButton from "../../../CustomButton/CustomButton";
+import SVG_IMDb from "../../../../images/SVGIMDb";
+import SVGIMDb from "../../../../images/SVGIMDb";
+import SVGKinopoisk from "../../../../images/SVGKinopoisk";
+
 
 const Information: React.FC = () => {
   return (
     <InformationCont>
-      
       <FilmPostersCont>
         <FilmImgCont>
           <img
@@ -50,7 +50,7 @@ const Information: React.FC = () => {
         <ButtonAddCategoryCont>
           <CustomButton>
             <ButtonAddCategoryText>
-              {SvgFolder}
+              {/* {SvgFolder} */}
               <p>Добавить котегорию</p>
             </ButtonAddCategoryText>
           </CustomButton>
@@ -74,11 +74,14 @@ const Information: React.FC = () => {
 
           <AnotherRatingCont>
             <AnotherRating>
-              {SvgKinoPoisk}
+              <SvgCont><SVGIMDb/></SvgCont>
+
               <p>7.1</p>
             </AnotherRating>
             <AnotherRating>
-              {SvgIMDb}
+              <SvgCont>
+                <SVGKinopoisk/>
+              </SvgCont>
               <p>6.8</p>
             </AnotherRating>
           </AnotherRatingCont>
@@ -157,7 +160,6 @@ const Information: React.FC = () => {
           </p>
         </DescriptionCont>
       </SecondFilmInformationCont>
-
     </InformationCont>
   );
 };

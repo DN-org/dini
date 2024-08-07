@@ -67,12 +67,27 @@ export const StarCont = styled("div")(() => ({
   width: "80%",
 }));
 
-export const AnotherRatingCont = styled("div")(() => ({}));
+export const SvgCont = styled("div")(() => ({
+  display: 'flex',  
+  height: '30px',
+  width: '30px',
+  justifyContent: 'center',
+  alignContent: 'center',
+  alignItems: 'center'
+}));
+
+export const AnotherRatingCont = styled("div")(() => ({
+  display: 'flex',
+  alignContent: 'center',
+  flexDirection: 'column'
+}));
 
 export const AnotherRating = styled("div")(() => ({
-  display: "grid",
-  gridTemplateColumns: "1fr 1fr",
-  alignItems: "center",
+  display: 'flex',
+  flexDirection: 'row',
+  justifyContent: 'center',
+  alignContent: 'center',
+  alignItems: 'center'
 }));
 
 export const AboutFilm = styled("div")(() => ({

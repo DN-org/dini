@@ -40,7 +40,7 @@ export const GlobalStyles = createGlobalStyle({
     opacity: "0.7",
   },
   a: {
-    ...TextStyles,
+    ...TextStyles,   textDecoration: "none",
   },
   button: {
     ...TextStyles,

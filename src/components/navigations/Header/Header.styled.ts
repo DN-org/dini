@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import SVGLogoWhite from "../../../images/SVGLogoWhite";
 
 export const HeaderStyled = styled("header")(() => ({
   background: "black",
@@ -24,12 +25,15 @@ export const HeaderStyled = styled("header")(() => ({
   alignItems: "center",
 }));
 
-export const HeaderLogoStyled = styled("img")(() => ({
+export const HeaderLogoLinkStyled = styled(Link)(() => ({
+  justifyContent: 'center',
+  alignContent: 'center',
+  display: 'flex'
+}));
+
+export const HeaderLogoStyled = styled(SVGLogoWhite)(() => ({
   width: "150px",
   display: "flex",
-  alignContent: "center",
-  justifyContent: "center",
-  alignItems: "center",
 }));
 
 export const HeaderAuthLinkStyled = styled(Link)(() => ({

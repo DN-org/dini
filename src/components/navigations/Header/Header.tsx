@@ -6,23 +6,20 @@ import {
   HeaderAuthLinkStyled,
   HeaderLogoStyled,
   HeaderStyled,
+  HeaderLogoLinkStyled,
 } from "./Header.styled";
 
 //components
 import HamburgerButton from "./HamburgerMenuButton/HamburgerMenuButton";
 import SearchField from "./SearchField/SearchField";
-import { Link } from "react-router-dom";
-
-//images
-const Logo: string = require("../../../images/logo_white.svg").default;
 
 const Header: React.FC = () => {
   return (
     <HeaderStyled>
       <HamburgerButton />
-      <Link to="/">
-        <HeaderLogoStyled src={Logo} alt="Logo" />
-      </Link>
+      <HeaderLogoLinkStyled to="/">
+        <HeaderLogoStyled/>
+      </HeaderLogoLinkStyled>
       <div />
       <SearchField />
       <HeaderAuthLinkStyled to="/Profile">Войти</HeaderAuthLinkStyled>

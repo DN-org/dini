@@ -1,16 +1,24 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import SVGLogoWhite from "../../../images/SVGLogoWhite";
 
 export const FooterStyled = styled("footer")(() => ({
-  borderTop: "1px solid white",
-  display: "grid",  
-  gridTemplateColumns: "1fr 0.7fr",
-  alignItems: "center",
   background: "black",
+  borderTop: "1px solid white",
   boxShadow: "15px 0px 20px 11px rgba(255, 255, 255, 0.1)",
-  width: '100%',
-  height: '100px',
-  padding: '0 100px',
+
+  height: "100px",
+  width: "100%",
+  minWidth: "1280px",
+
+  display: "grid",
+  gridTemplateColumns: "150px 450px 700px",
+  padding: "0 100px",
+  columnGap: "auto",
+
+  alignContent: "center",
+  justifyContent: "center",
+  alignItems: "center",
 }));
 
 export const FooterContainerStyled = styled("div")(() => ({
@@ -18,22 +26,26 @@ export const FooterContainerStyled = styled("div")(() => ({
   bottom: "0",
 }));
 
-export const FooterLogoStyled = styled("img")(() => ({
-  width: "200px",
+export const FooterLogoLinkStyled = styled(Link)(() => ({
+  display: "flex",
+  justifyContent: "center",
+  alignContent: "center",
+}));
+
+export const FooterLogoStyled = styled(SVGLogoWhite)(() => ({
+  width: "150px",
+  display: "flex",
+  alignSelf: "center",
+  justifySelf: "center",
 }));
 
 export const FooterLinksStyled = styled("div")(() => ({
   display: "grid",
   gridTemplateColumns: "repeat(5, 1fr)",
-  columnGap: "80px",
+  columnGap: "50px",
 }));
 
 export const FooterLinkStyled = styled(Link)(() => ({
-  fontFamily: "Play",
-  fontSize: "16px",
-  lineHeight: "20px",
   fontWeight: "400",
-  color: "#f1f1f1",
   opacity: "0.7",
-  textDecoration: "none",
 }));

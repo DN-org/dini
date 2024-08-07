@@ -5,15 +5,17 @@ import {
   FooterLinkStyled,
   FooterLogoStyled,
   FooterStyled,
+  FooterLogoLinkStyled
 } from "./Footer.styled";
-
-const Logo: string = require("../../../images/logo_white.svg").default;
 
 const Footer: React.FC = () => {
   return (
     <FooterContainerStyled>
       <FooterStyled>
-        <FooterLogoStyled src={Logo} />
+      <FooterLogoLinkStyled to="/">
+        <FooterLogoStyled/>
+      </FooterLogoLinkStyled>
+      <div/>
         <FooterLinksStyled>
           <FooterLinkStyled to="/Movies">Фильмы</FooterLinkStyled>
           <FooterLinkStyled to="/">Сериалы</FooterLinkStyled>
