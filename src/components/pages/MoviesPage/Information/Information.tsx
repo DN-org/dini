@@ -46,7 +46,7 @@ const Information: React.FC = () => {
           <ButtonAddCategoryStyled>
             <ButtonAddCategoryText>
               <CreateNewFolderOutlinedIcon />
-              Добавить котегорию
+              Добавить в категорию
             </ButtonAddCategoryText>
           </ButtonAddCategoryStyled>
         </ButtonAddCategoryCont>
