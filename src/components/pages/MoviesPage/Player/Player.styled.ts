@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const PlayerCont = styled('div')(() => ({
     padding: '0 50px',
-
 }));
 
 export const OtherPlayerCont = styled('div')(() => ({

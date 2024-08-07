@@ -8,15 +8,13 @@ import {
   PlayerPlay,
 } from "./Player.styled";
 
+//не помню как называется
+import {PlayerIframeFirst, PlayerIframeSecond, PlayerIframeThird} from "./Player__Iframe/Player__Iframe";
+
 //Modal
 import Modal from "../../../PopUp/Modal";
 import Test from "../../../PopUp/Test/Test";
 import CustomButton from "../../../CustomButton/CustomButton";
-
-// Test
-const ProductAdmin = () => <div>Player_1</div>;
-const ClientNumber = () => <div>Player_2</div>;
-const AnotherComponent = () => <div>Player_3</div>;
 
 const Player: React.FC = () => {
   const [activeTab, setActiveTab] = useState("Player_1");
@@ -47,13 +45,13 @@ const Player: React.FC = () => {
       </OtherPlayerCont>
 
       <PlayerPlay>
-        {activeTab === "Player_1" && <ProductAdmin />}
-        {activeTab === "Player_2" && <ClientNumber />}
-        {activeTab === "Player_3" && <AnotherComponent />}
+        {activeTab === "Player_1" && <PlayerIframeFirst />}
+        {activeTab === "Player_2" && <PlayerIframeSecond />}
+        {activeTab === "Player_3" && <PlayerIframeThird />}
       </PlayerPlay>
       <button onClick={() => setModalActive(true)}>Добавить</button>
       <Modal active={modalActive} setActive={setModalActive}>
-        <Test/>
+        <Test />
       </Modal>
     </PlayerCont>
   );

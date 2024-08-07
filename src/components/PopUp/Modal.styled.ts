@@ -18,17 +18,14 @@ export const ModalOverlay = styled.div<ModalOverlayProps>`
 `;
 
 export const ModalContent = styled.div`
-  background: white;
-  padding: 20px;
-  border-radius: 5px;
   position: relative;
   z-index: 1001;
 `;
 
 export const CloseButton = styled.button`
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: -40px;
+  right: -30px;
   background: none;
   border: none;
   font-size: 1.5rem;
