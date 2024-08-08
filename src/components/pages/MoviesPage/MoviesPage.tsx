@@ -5,6 +5,7 @@ import { Content } from './MoviesPage.styled';
 import Information from './Information/Information';
 import Player from './Player/Player';
 import RelatedFilms from './RelatedFilms/RelatedFilms';
+import Comments from './Comments/Comments';
 
 const MoviesPage: React.FC = () => {
   return (
@@ -12,6 +13,7 @@ const MoviesPage: React.FC = () => {
       <Information/>
       <Player/>
       <RelatedFilms/>
+      <Comments/>
     </Content>
   );
 };
