@@ -58,7 +58,6 @@ export const RatingContainer = styled("div")(() => ({
   display: "grid",
   gridTemplateColumns: "150px 1fr 0.2fr",
   alignItems: "center",
-
   width: "550px",
 }));
 
@@ -114,7 +113,7 @@ export const MainRolesContainer = styled("div")(() => ({
 }));
 
 export const CarouselCont = styled("div")(() => ({
-  
+  width:'700px'
 }));
 
 export const DescriptionStyled = styled("div")(() => ({

@@ -27,3 +27,10 @@ const Modal: React.FC<ModalProps> = ({ active, setActive, children }) => {
 };
 
 export default Modal;
+{/* 
+const [modalActive, setModalActive] = useState(false);
+<button onClick={() => setModalActive(true)}>Добавить</button>
+<Modal active={modalActive} setActive={setModalActive}>
+  <Test />
+</Modal> 
+*/}

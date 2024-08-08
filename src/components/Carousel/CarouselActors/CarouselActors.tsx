@@ -31,7 +31,7 @@ const CustomPrevArrow: React.FC<ArrowProps> = ({ onClick }) => (
 );
 
 
-const Carousel: React.FC = () => {
+const CarouselActors: React.FC = () => {
   const settings = {
     dots: false,
     infinite: true,
@@ -92,4 +92,4 @@ const Carousel: React.FC = () => {
   );
 };
 
-export default Carousel;
+export default CarouselActors;

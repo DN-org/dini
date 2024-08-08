@@ -9,16 +9,17 @@ import {
 } from "./Player.styled";
 
 //не помню как называется
-import {PlayerIframeFirst, PlayerIframeSecond, PlayerIframeThird} from "./Player__Iframe/Player__Iframe";
+import {
+  PlayerIframeFirst,
+  PlayerIframeSecond,
+  PlayerIframeThird,
+} from "./Player__Iframe/Player__Iframe";
 
 //Modal
-import Modal from "../../../PopUp/Modal";
-import Test from "../../../PopUp/Test/Test";
 import CustomButton from "../../../CustomButton/CustomButton";
 
 const Player: React.FC = () => {
   const [activeTab, setActiveTab] = useState("Player_1");
-  const [modalActive, setModalActive] = useState(false);
 
   const handleTab = (e: React.MouseEvent<HTMLButtonElement>) => {
     setActiveTab(e.currentTarget.getAttribute("data-name") || "Player_1");
@@ -49,10 +50,6 @@ const Player: React.FC = () => {
         {activeTab === "Player_2" && <PlayerIframeSecond />}
         {activeTab === "Player_3" && <PlayerIframeThird />}
       </PlayerPlay>
-      <button onClick={() => setModalActive(true)}>Добавить</button>
-      <Modal active={modalActive} setActive={setModalActive}>
-        <Test />
-      </Modal>
     </PlayerCont>
   );
 };

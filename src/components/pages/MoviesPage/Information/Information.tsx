@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 
 //styles
 import {
@@ -29,10 +29,11 @@ import CreateNewFolderOutlinedIcon from "@mui/icons-material/CreateNewFolderOutl
 //components
 import SVGIMDb from "../../../../images/SVGIMDb";
 import SVGKinopoisk from "../../../../images/SVGKinopoisk";
-import Carousel from "../../../Carousel/CarouselActors/CarouselActors";
+import CarouselActors from "../../../Carousel/CarouselActors/CarouselActors";
 import StarRating from "../../../StarRating/StarRating";
 
 const Information: React.FC = () => {
+  const [modalActive, setModalActive] = useState(false);
   return (
     <div>
       <InformationStyled>
@@ -64,7 +65,7 @@ const Information: React.FC = () => {
             </div>
 
             <StarCont>
-              <StarRating />
+                <StarRating />
             </StarCont>
 
             <RatingChildContainer>
@@ -136,7 +137,7 @@ const Information: React.FC = () => {
           <MainRolesContainer>
             <h3>В главных ролях</h3>
             <CarouselCont>
-              <Carousel />
+              <CarouselActors />
             </CarouselCont>
           </MainRolesContainer>
         </InformationContainer>
