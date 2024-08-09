@@ -1,4 +1,4 @@
-#React Commands
+# React Commands
 
 ### `npm start` Запуск проекта
 
@@ -8,7 +8,7 @@
 
 ### `npm uninstall npmName --save-dev` Удаление пакетов
 
-#Git Commands
+# Git Commands
 
 ### `git config --global user.name "UserName"` Вход в аккаунт - Логин
 
@@ -36,9 +36,9 @@
 
 ### `git reset --hard` Сброс изменений до последнего commit
 
-##Порядок стилей
+## Порядок стилей
 
-#Фон и декор
+# Фон и декор
 
 background | backgroundColor | backgroundImage
 backgroundPosition | backgroundRepeat | backgroundSize
@@ -46,7 +46,7 @@ boxShadow
 opacity
 filter
 
-#Анимация и трансформация
+# Анимация и трансформация
 
 transition | animation
 transform
@@ -54,20 +54,20 @@ cursor | pointerEvents
 userSelect | resize
 visibility | content
 
-##Псевдоклассы взаимодействия (интерактивные состояния):
+## Псевдоклассы взаимодействия (интерактивные состояния):
 
 :hover
 :focus
 :active
 
-#Псевдоклассы положения:
+# Псевдоклассы положения:
 
 :first-child
 :last-child
 :nth-child(), :nth-of-type()
 :nth-last-child()
 
-#Псевдоклассы формы:
+# Псевдоклассы формы:
 
 :checked
 :disabled
@@ -75,14 +75,14 @@ visibility | content
 :required
 :valid, :invalid
 
-#Псевдоклассы внешнего состояния:
+# Псевдоклассы внешнего состояния:
 
 :empty
 :not()
 :root
 :target
 
-#Псевдоэлементы (как завершение стиля):
+# Псевдоэлементы (как завершение стиля):
 
 ::before
 ::after
