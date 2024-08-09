@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 //Styles
 import { DevPageStyled } from "./DevPage.styled";
 
+
 const DevPage: React.FC = () => {
   return (
     <DevPageStyled>
@@ -16,7 +17,6 @@ const DevPage: React.FC = () => {
         <Link to={"/Profile"}>/Profile</Link>
         <Link to={"/SignIn"}>/SignIn</Link>
         <Link to={"/SignUp"}>/SignUp</Link>
-      } }/>
     </DevPageStyled>
   );
 };
