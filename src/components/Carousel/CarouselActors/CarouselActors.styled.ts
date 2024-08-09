@@ -52,6 +52,7 @@ export const ImgCont = styled('div')(() => ({
         width: '140px',
         height: '130px',
         borderRadius:'50%',
+        objectFit:'cover',
       },
       p:{
         height:'55px',

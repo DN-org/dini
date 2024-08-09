@@ -1,10 +1,14 @@
 import React from "react";
-import { ProfilePageStyled } from "./ProfilePage.styled";
+import { Content } from "./ProfilePage.styled";
+
+import Profile from "./Profile/Profile";
 
 const ProfilePage: React.FC = () => {
-  return <ProfilePageStyled>
-    
-  </ProfilePageStyled>;
+  return(
+    <Content>
+      <Profile/>
+    </Content>
+  );
 };
 
 export default ProfilePage;

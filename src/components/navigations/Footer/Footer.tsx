@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
       <div/>
         <FooterLinksStyled>
           <FooterLinkStyled to="/Movies">Фильмы</FooterLinkStyled>
-          <FooterLinkStyled to="/">Сериалы</FooterLinkStyled>
+          <FooterLinkStyled to="/Profile">Сериалы</FooterLinkStyled>
           <FooterLinkStyled to="/">Мультфильмы</FooterLinkStyled>
           <FooterLinkStyled to="/">Мультсериалы</FooterLinkStyled>
           <FooterLinkStyled to="/">Аниме</FooterLinkStyled>
