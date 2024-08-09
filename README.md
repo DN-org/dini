@@ -49,89 +49,134 @@
 ### Позиционирование
 
 `position`
+
 `top` | `right` | `bottom` | `left`
+
 `margin`
+
 `padding`
+
 `zIndex`
+
 `display`
+
 `alignContent` | `justifyContent`
 
 ### Размеры
 
 `width` | `height`
+
 `minWidth` | `minHeight`
+
 `maxWidth` | `maxHeight`
 
 ### Границы
 
 `border`
+
 `borderColor`
+
 `borderRadius`
+
 `outline`
+
 `overflow`
+
 `clip-path`
+
 `object-fit`
 
 ### Типография
 
 `fontFamily`
+
 `fontSize`
+
 `fontWeight`
+
 `fontStyle`
+
 `lineHeight`
+
 `letterSpacing` | `wordSpacing`
 `textAlign`
+
 `textDecoration`
+
 `color`
+
 `textTransform`
+
 `textShadow`
+
 `whitespace`
 
 ### Фон и декор
 
 `background` | `backgroundColor` | `backgroundImage`
+
 `backgroundPosition` | `backgroundRepeat` | `backgroundSize`
+
 `boxShadow`
+
 `opacity`
+
 `filter`
 
 ### Анимация и трансформация
 
 `transition` | `animation`
+
 `transform`
+
 `cursor` | `pointerEvents`
+
 `userSelect` | `resize`
+
 `visibility` | `content`
 
 ## Псевдоклассы взаимодействия (интерактивные состояния):
 
 `:hover`
+
 `:focus`
+
 `:active`
 
 ### Псевдоклассы положения:
 
 `:first-child`
+
 `:last-child`
+
 `:nth-child(), :nth-of-type()`
+
 `:nth-last-child()`
 
 ### Псевдоклассы формы:
 
 `:checked`
+
 `:disabled`
+
 `:enabled`
+
 `:required`
+
 `:valid, :invalid`
 
 ### Псевдоклассы внешнего состояния:
 
 `:empty`
+
 `:not()`
+
 `:root`
+
 `:target`
 
 ### Псевдоэлементы (как завершение стиля):
 
 `::before`
+
 `::after`
