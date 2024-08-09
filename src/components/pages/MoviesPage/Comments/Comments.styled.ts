@@ -1,37 +1,27 @@
 import styled from "styled-components";
+import CustomButton from "../../../CustomButton/CustomButton";
 
 
-export const CommentsContainer = styled('div')(() => ({
-  padding:'20px 50px 10px',
+export const CommentsStyled = styled('div')(() => ({
+  padding:'20px 50px',
+  display:'grid',
+  rowGap:'25px',
 }));
 
-export const SortContainer = styled('div')(() => ({
+export const CommentsTitleContainer = styled('div')(() => ({
+  display: 'grid',
+  ColumnGap: '50px',
+  gridTemplateColumns: '1fr 0.3fr',
+  justifyContent: 'center',
+  alignItems: 'center',
+}));
 
+export const CommentsSort = styled(CustomButton)(() => ({
+  
 }));
 
 export const CommentsList = styled('div')(() => ({
-
-}));
-
-export const Comment = styled ('div')(() =>({
-  display:'grid',
-}));
-
-export const Profile = styled ('div')(() => ({
-  display:'flex',
-  backgroundColor:'rgb(13,13,13)',
-  img:{
-    width:'45px',
-    height: '45px',
-    borderRadius:'50%',
-  }
-}));
-
-export const ProfileName = styled ('div')(() => ({
-
-}));
-
-export const CommentText = styled ('p')(() => ({
-
+  display: 'inline',
+  rowGap:'25px',
 }));
 

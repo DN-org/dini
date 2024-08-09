@@ -4,7 +4,7 @@ import {
   HomePageStyled,
   HomePageCarouselSlideContainer,
 } from "./HomePage.styled";
-import CustomCarousel from "../../Carousel/Carousel/CustomCarousel";
+import CustomCarousel from "../../Carousel/CustomCarousel/CustomCarousel";
 
 const HomePage: React.FC = () => {
   return (
@@ -41,7 +41,7 @@ const HomePage: React.FC = () => {
           />
         </HomePageCarouselSlideContainer>
       </CustomCarousel>
-    </HomePageStyled> 
+    </HomePageStyled>
   );
 };
 
