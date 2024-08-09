@@ -38,7 +38,7 @@
 
 ## Порядок стилей
 
-# Фон и декор
+### Фон и декор
 
 background | backgroundColor | backgroundImage
 backgroundPosition | backgroundRepeat | backgroundSize
@@ -46,7 +46,7 @@ boxShadow
 opacity
 filter
 
-# Анимация и трансформация
+### Анимация и трансформация
 
 transition | animation
 transform
@@ -60,14 +60,14 @@ visibility | content
 :focus
 :active
 
-# Псевдоклассы положения:
+### Псевдоклассы положения:
 
 :first-child
 :last-child
 :nth-child(), :nth-of-type()
 :nth-last-child()
 
-# Псевдоклассы формы:
+### Псевдоклассы формы:
 
 :checked
 :disabled
@@ -75,14 +75,14 @@ visibility | content
 :required
 :valid, :invalid
 
-# Псевдоклассы внешнего состояния:
+### Псевдоклассы внешнего состояния:
 
 :empty
 :not()
 :root
 :target
 
-# Псевдоэлементы (как завершение стиля):
+### Псевдоэлементы (как завершение стиля):
 
 ::before
 ::after
