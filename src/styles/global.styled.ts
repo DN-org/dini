@@ -40,7 +40,8 @@ export const GlobalStyles = createGlobalStyle({
     opacity: "0.7",
   },
   a: {
-    ...TextStyles,   textDecoration: "none",
+    ...TextStyles,
+    textDecoration: "none",
   },
   button: {
     ...TextStyles,
@@ -50,5 +51,19 @@ export const GlobalStyles = createGlobalStyle({
   },
   "::placeholder": {
     ...TextStyles,
+  },
+  "::-webkit-scrollbar": {
+    width: "12px", // Ширина скроллбара
+  },
+  "::-webkit-scrollbar-track": {
+    background: "#333", // Цвет фона скроллбара
+  },
+  "::-webkit-scrollbar-thumb": {
+    backgroundColor: "#888", // Цвет ползунка
+    borderRadius: "6px", // Скругление углов ползунка
+    border: "2px solid #555", // Рамка вокруг ползунка
+  },
+  "::-webkit-scrollbar-thumb:hover": {
+    backgroundColor: "#555", // Цвет ползунка при наведении
   },
 });
