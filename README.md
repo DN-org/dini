@@ -2,69 +2,87 @@
 
 ### `npm start` Запуск проекта
 
-###npm i
+### `npm i` Установка недостающих пакетов
 
-Установка недостающих пакетов
+### `npm install npmName --save-dev` Установка пакетов
 
-###npm install npmName --save-dev
-
-Установка пакетов
-
-###npm uninstall npmName --save-dev
-
-Удаление пакетов
+### `npm uninstall npmName --save-dev` Удаление пакетов
 
 #Git Commands
 
-###git status
+### `git config --global user.name "UserName"` Вход в аккаунт - Логин
 
-Просмотр изменений
+### `git config --global user.email "dev@mail.com"` Вход в аккаунт - email
 
-###git
+### `git config --global credential.helper cache` Кэширование аккаунта
 
-# Getting Started with Create React App
+### `git status` Просмотр изменений
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### `git add .` Добавление сделанных изменений для commit
 
-## Available Scripts
+### `git commit -m "Сделал ReadMe"` Создание commit с сообщением
 
-In the project directory, you can run:
+### `git push origin branchName` Первая отправка commit
 
-### `npm start`
+### `git push` Отправка commita
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### `git pull` Получение изменений репозитория
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### `git checkout branchName` Смена ветки
 
-### `npm test`
+### `git checkout -b branchName` Создание ветки
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `git fetch` Получение веток репозитория
 
-### `npm run build`
+### `git reset --hard` Сброс изменений до последнего commit
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+##Порядок стилей
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#Фон и декор
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+background | backgroundColor | backgroundImage
+backgroundPosition | backgroundRepeat | backgroundSize
+boxShadow
+opacity
+filter
 
-### `npm run eject`
+#Анимация и трансформация
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+transition | animation
+transform
+cursor | pointerEvents
+userSelect | resize
+visibility | content
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+##Псевдоклассы взаимодействия (интерактивные состояния):
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+:hover
+:focus
+:active
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#Псевдоклассы положения:
 
-## Learn More
+:first-child
+:last-child
+:nth-child(), :nth-of-type()
+:nth-last-child()
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#Псевдоклассы формы:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+:checked
+:disabled
+:enabled
+:required
+:valid, :invalid
+
+#Псевдоклассы внешнего состояния:
+
+:empty
+:not()
+:root
+:target
+
+#Псевдоэлементы (как завершение стиля):
+
+::before
+::after
