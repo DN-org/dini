@@ -1,5 +1,12 @@
 import styled from "styled-components";
 
+//Позиционирование
+//Размеры
+//Границы
+//Типография
+//Фон и декор
+//Анимация и трансформация
+
 export const DevPageStyled = styled("div")(() => ({
   //Позиционирование
   padding: "150px 150px",

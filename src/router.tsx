@@ -15,6 +15,7 @@ import SignUpPage from "./components/pages/SignUpPage/SignUpPage";
 //Components
 import Footer from "./components/navigations/Footer/Footer";
 import Header from "./components/navigations/Header/Header";
+import ActorPage from "./components/pages/ActorPage/ActorPage";
 
 export const AppRoutes: React.FC = () => {
   return (
@@ -23,6 +24,7 @@ export const AppRoutes: React.FC = () => {
 
       <Routes>
         <Route path="/" element={<DevPage />} />
+        <Route path="/Actor" element={<ActorPage />} />
         <Route path="/SignIn" element={<SignInPage />} />
         <Route path="/SignUp" element={<SignUpPage />} />
         <Route path="/Media" element={<MediaPage />} />

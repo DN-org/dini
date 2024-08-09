@@ -10,6 +10,7 @@ const DevPage: React.FC = () => {
     <DevPageStyled>
         <Link to={"/Admin"}>/Admin</Link>
         <Link to={"/Cataloque"}>/Cataloque</Link>
+        <Link to={"/Actor"}>/Actor</Link>
         <Link to={"/Home"}>/Home</Link>
         <Link to={"/Media"}>/Media</Link>
         <Link to={"/Profile"}>/Profile</Link>
