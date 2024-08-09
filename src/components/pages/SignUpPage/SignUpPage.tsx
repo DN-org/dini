@@ -1,4 +1,9 @@
+//Packages
+import { Visibility, VisibilityOff } from "@mui/icons-material";
+import { InputAdornment } from "@mui/material";
 import React, { useState } from "react";
+
+//Styles
 import {
   PasswordEyeIcon,
   SignUpForm,
@@ -6,8 +11,6 @@ import {
   SignUpInput,
   SignUpPageStyled,
 } from "./SignUpPage.styled";
-import { InputAdornment } from "@mui/material";
-import { Visibility, VisibilityOff } from "@mui/icons-material";
 
 const SignUpPage: React.FC = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -53,7 +56,7 @@ const SignUpPage: React.FC = () => {
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
-  
+
     let error = "";
     switch (name) {
       case "userLogin":

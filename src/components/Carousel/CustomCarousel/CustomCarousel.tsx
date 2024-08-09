@@ -1,8 +1,4 @@
-import "swiper/css";
-import "swiper/css/effect-coverflow";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-
+//Packages
 import React, { useRef } from "react";
 import { Swiper as SwiperType } from "swiper";
 import {
@@ -15,6 +11,11 @@ import {
 } from "swiper/modules";
 import { Swiper } from "swiper/react";
 
+//Styles
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import {
   CustomCarouselButton,
   CustomCarouselButtonArrow,

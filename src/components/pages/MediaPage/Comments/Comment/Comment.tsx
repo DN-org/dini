@@ -1,4 +1,8 @@
+//Packages
+import StarIcon from "@mui/icons-material/Star";
 import React from "react";
+
+//Styles
 import {
   CommentStarContainer,
   CommentStyled,
@@ -8,34 +12,41 @@ import {
   CommentUserLogoContainer,
   CommentUserName,
 } from "./Comment.styled";
-import StarIcon from "@mui/icons-material/Star";
 
 interface CommentProps {
-    userName: string;
-    userAvatar: string;
-    rating: number; // предполагается, что рейтинг передается числом
-    text: string;
-  }
+  userName: string;
+  userAvatar: string;
+  rating: number; // предполагается, что рейтинг передается числом
+  text: string;
+}
 
-  const Comment: React.FC<CommentProps> = ({ userName, userAvatar, rating, text }) => {
-    return (
-      <CommentStyled>
-        <CommentUserInfoContainer>
-          <CommentUserLogoContainer src={userAvatar} />
-          <CommentUserInfoChildContainer>
-            <CommentUserName>{userName}</CommentUserName>
-            <CommentStarContainer>
-              {Array.from({ length: 5 }, (_, index) => (
-                <StarIcon key={index} style={{ color: index < rating ? "gold" : "gray" }} />
-              ))}
-            </CommentStarContainer>
-          </CommentUserInfoChildContainer>
-        </CommentUserInfoContainer>
-        <CommentText>
-          <p>{text}</p>
-        </CommentText>
-      </CommentStyled>
-    );
-  };
-  
-  export default Comment;
+const Comment: React.FC<CommentProps> = ({
+  userName,
+  userAvatar,
+  rating,
+  text,
+}) => {
+  return (
+    <CommentStyled>
+      <CommentUserInfoContainer>
+        <CommentUserLogoContainer src={userAvatar} />
+        <CommentUserInfoChildContainer>
+          <CommentUserName>{userName}</CommentUserName>
+          <CommentStarContainer>
+            {Array.from({ length: 5 }, (_, index) => (
+              <StarIcon
+                key={index}
+                style={{ color: index < rating ? "gold" : "gray" }}
+              />
+            ))}
+          </CommentStarContainer>
+        </CommentUserInfoChildContainer>
+      </CommentUserInfoContainer>
+      <CommentText>
+        <p>{text}</p>
+      </CommentText>
+    </CommentStyled>
+  );
+};
+
+export default Comment;

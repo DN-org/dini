@@ -1,14 +1,18 @@
+//Packages
 import styled from "styled-components";
 import MenuIcon from "@mui/icons-material/Menu";
 
 export const HamburgerMenuButtonStyled = styled(MenuIcon)(() => ({
   "&&": {
-    width: "50px",
-    height: "auto",
-    color: "#fff",
+    //Позиционирование
     display: "flex",
     alignContent: "center",
     justifyContent: "center",
     alignItems: "center",
+    //Размеры
+    width: "50px",
+    height: "auto",
+    //Типография
+    color: "#fff",
   },
 }));

@@ -1,22 +1,21 @@
+//Packages
 import React, { useState } from "react";
 
-// styles
-import {
-  PlayerCont,
-  OtherPlayerCont,
-  AnotherPlayerCont,
-  PlayerPlay,
-} from "./Player.styled";
-
-//не помню как называется
+//Components
+import CustomButton from "../../../CustomButton/CustomButton";
 import {
   PlayerIframeFirst,
   PlayerIframeSecond,
   PlayerIframeThird,
 } from "./Player__Iframe/Player__Iframe";
 
-//Modal
-import CustomButton from "../../../CustomButton/CustomButton";
+//Styles
+import {
+  PlayerCont,
+  OtherPlayerCont,
+  AnotherPlayerCont,
+  PlayerPlay,
+} from "./Player.styled";
 
 const Player: React.FC = () => {
   const [activeTab, setActiveTab] = useState("Player_1");

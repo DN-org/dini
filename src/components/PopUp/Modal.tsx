@@ -1,5 +1,8 @@
+//Packages
 import React, { ReactNode } from "react";
-import { ModalOverlay, ModalContent, CloseButton } from "./Modal.styled";
+
+//Styles
+import { CloseButton, ModalContent, ModalOverlay } from "./Modal.styled";
 
 interface ModalProps {
   active: boolean;

@@ -1,18 +1,18 @@
-//npms
+//Packages
 import React from "react";
 
-//styled
+//Components
+import HamburgerButton from "./HamburgerMenuButton/HamburgerMenuButton";
+import SearchField from "./SearchField/SearchField";
+import MiniProfile from "./MiniProfile/MiniProfile";
+
+//Styled
 import {
   HeaderAuthLinkStyled,
   HeaderLogoStyled,
   HeaderStyled,
   HeaderLogoLinkStyled,
 } from "./Header.styled";
-
-//components
-import HamburgerButton from "./HamburgerMenuButton/HamburgerMenuButton";
-import SearchField from "./SearchField/SearchField";
-import MiniProfile from "./MiniProfile/MiniProfile";
 
 const Header: React.FC = () => {
   return (

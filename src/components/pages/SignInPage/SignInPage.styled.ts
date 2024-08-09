@@ -1,26 +1,39 @@
+//Packages
 import { IconButton, TextField } from "@mui/material";
 import styled from "styled-components";
+
+//Components
 import CustomButton from "../../CustomButton/CustomButton";
 
 export const SignInPageStyled = styled("div")(() => ({
+  //Позиционирование
+  marginLeft: "50%",
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "center",
-  minHeight: "720px",
+  //Размеры
+  width: "100%",
   height: "80vh",
   minWidth: "1280px",
-  width: "100%",
+  minHeight: "720px",
+  //Границы
+  //Типография
+  //Фон и декор
   backgroundColor: "black",
-  marginLeft: "50%",
+  //Анимация и трансформация
   transform: "translate(-50%)",
 }));
 
 export const SignInForm = styled("form")(() => ({
+  //Позиционирование
   display: "grid",
-  textAlign: "center",
   rowGap: "25px",
+  //Размеры
   width: "500px",
+  //Типография
+  textAlign: "center",
+  //Фон и декор
   h1: {
     padding: "25px",
   },
@@ -64,7 +77,6 @@ export const SignInInput = styled(TextField)(() => ({
 }));
 
 export const SignInFormButton = styled(CustomButton)(() => ({
-  
   height: "60px",
   "&&": {
     borderRadius: "15px",

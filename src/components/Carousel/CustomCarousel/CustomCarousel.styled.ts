@@ -1,76 +1,98 @@
-import styled from 'styled-components';
-import { SwiperSlide } from 'swiper/react';
-
-import ArrowBackIosNewRoundedIcon from '@mui/icons-material/ArrowBackIosNewRounded';
-import { Button } from '@mui/material';
+//Packages
+import styled from "styled-components";
+import { SwiperSlide } from "swiper/react";
+import ArrowBackIosNewRoundedIcon from "@mui/icons-material/ArrowBackIosNewRounded";
+import { Button } from "@mui/material";
 
 export const CustomCarouselContainer = styled("div")(() => ({
-  width: "100%",
+  //Позиционирование
   position: "relative",
   padding: "20px 0",
+  //Размеры
+  width: "100%",
 }));
 
 export const CustomCarouselSlide = styled(SwiperSlide)`
+  //Позиционирование
   display: flex;
   justify-content: center;
   align-items: center;
+  //Фон и декор
+  opacity: 0;
+  //Анимация и трансформация
   transition: opacity 0.3s ease;
 
-  /* Устанавливаем прозрачность для всех слайдов */
-  opacity: 0;
-
-  /* Активный слайд выделяется */
+  /* Активный слайд*/
   &.swiper-slide-active {
+    //Фон и декор
     opacity: 1;
   }
 
-  /* Соседние слайды немного тусклее */
+  /* Соседние слайды*/
   &.swiper-slide-next,
   &.swiper-slide-prev {
+    //Фон и декор
     opacity: 0.3;
   }
-  
+
   .swiper-pagination-bullet {
-    background-color: red; /* Измените на нужный цвет */
+    //Фон и декор
+    background-color: red;
   }
 
   .swiper-pagination-bullet-active {
-    background-color: green; /* Цвет активной пагинации */
+    //Фон и декор
+    background-color: green;
   }
 `;
 
 export const CustomCarouselButton = styled(Button)(() => ({
   "&&": {
+    //Позиционирование
     position: "absolute",
     top: "50%",
-    transform: "translateY(-50%)",
-    zIndex: 10,
-    color: "white",
-    border: "1px solid rgba(255, 255, 255, 0.2)",
-    borderRadius: "50%",
-    width: "100px",
-    height: "100px",
-    cursor: "pointer",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    backdropFilter: "saturate(80%)",
-    transition: ".2s",
+    zIndex: 10,
+    //Размеры
+    width: "100px",
+    height: "100px",
+    //Границы
+    border: "1px",
+    borderColor: "rgba(255, 255, 255, 0.2)",
+    borderRadius: "50%",
+    //Типография
+    color: "white",
+    //Фон и декор
     background: "rgba(255, 255, 255, 0.05)",
+    backdropFilter: "saturate(80%)",
+    //Анимация и трансформация
+    transform: "translateY(-50%)",
+    cursor: "pointer",
+    transition: ".2s",
+
     "&.prev": {
-      left: "150px", // Исправлена позиция кнопки
+      //Позиционирование
+      left: "150px",
     },
 
     "&.next": {
-      right: "150px", // Исправлена позиция кнопки
+      //Позиционирование
+      right: "150px",
     },
 
     "&:hover": {
+      //Границы
+      border: "1px",
+      borderColor: "rgba(255, 255, 255, 0.5)",
+      //Фон и декор
       background: "rgba(255, 255, 255, 0.05)",
-      border: "1px solid rgba(255, 255, 255, 0.5)",
       "*": {
+        //Типография
         fontSize: "60px",
-        transition: ".2s"
+        //Анимация и трансформация
+        transition: ".2s",
       },
     },
   },
@@ -79,8 +101,10 @@ export const CustomCarouselButton = styled(Button)(() => ({
 export const CustomCarouselButtonArrow = styled(ArrowBackIosNewRoundedIcon)(
   () => ({
     "&&": {
+      //Типография
       fontSize: "50px",
       "&.rarrow": {
+        //Анимация и трансформация
         transform: "rotate(180deg)",
       },
     },

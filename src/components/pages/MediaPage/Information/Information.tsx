@@ -1,6 +1,7 @@
-import React,{useState} from "react";
+//Packages
+import React, { useState } from "react";
 
-//styles
+//Styles
 import {
   AboutChildContainer,
   AboutStyled,
@@ -23,14 +24,14 @@ import {
   SvgContainer,
 } from "./Information.styled";
 
-//SVG
-import CreateNewFolderOutlinedIcon from "@mui/icons-material/CreateNewFolderOutlined";
-
-//components
+//Components
 import SVGIMDb from "../../../../images/SVGIMDb";
 import SVGKinopoisk from "../../../../images/SVGKinopoisk";
 import CarouselActors from "../../../Carousel/CarouselActors/CarouselActors";
 import StarRating from "../../../StarRating/StarRating";
+
+//SVG
+import CreateNewFolderOutlinedIcon from "@mui/icons-material/CreateNewFolderOutlined";
 
 const Information: React.FC = () => {
   const [modalActive, setModalActive] = useState(false);
@@ -65,7 +66,7 @@ const Information: React.FC = () => {
             </div>
 
             <StarCont>
-                <StarRating />
+              <StarRating />
             </StarCont>
 
             <RatingChildContainer>

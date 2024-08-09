@@ -1,3 +1,4 @@
+//Styles
 import { HamburgerMenuButtonStyled } from "./HamburgerMenuButton.styled";
 
 const HamburgerButton: React.FC = () => {

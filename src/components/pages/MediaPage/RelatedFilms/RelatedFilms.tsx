@@ -1,8 +1,11 @@
+//Packages
 import React from "react";
 
-import { RelatedFilmsContainer, ImgContainer } from "./RelatedFilms.styled";
-
+//Components
 import CarouselMovies from "../../../Carousel/CarouselMovies/CarouselMovies";
+
+//Styles
+import { ImgContainer, RelatedFilmsContainer } from "./RelatedFilms.styled";
 
 const RelatedFilms: React.FC = () => {
   return (
@@ -52,8 +55,6 @@ const RelatedFilms: React.FC = () => {
             alt=""
           />
         </ImgContainer>
-        
-
       </CarouselMovies>
     </RelatedFilmsContainer>
   );

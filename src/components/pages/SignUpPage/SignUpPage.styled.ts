@@ -1,26 +1,39 @@
+//Packages
 import { IconButton, TextField } from "@mui/material";
 import styled from "styled-components";
+
+//Components
 import CustomButton from "../../CustomButton/CustomButton";
 
 export const SignUpPageStyled = styled("div")(() => ({
+  //Позиционирование
+  marginLeft: "50%",
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "center",
-  minHeight: "720px",
+  //Размеры
+  width: "100%",
   height: "80vh",
   minWidth: "1280px",
-  width: "100%",
+  minHeight: "720px",
+  //Фон и декор
   backgroundColor: "black",
-  marginLeft: "50%",
+  //Анимация и трансформация
   transform: "translate(-50%)",
 }));
 
 export const SignUpForm = styled("form")(() => ({
+  //Позиционирование
   display: "grid",
-  textAlign: "center",
   rowGap: "25px",
+  textAlign: "center",
+  //Размеры
   width: "500px",
+  //Границы
+  //Типография
+  //Фон и декор
+  //Анимация и трансформация
   h1: {
     padding: "25px",
   },
@@ -28,28 +41,29 @@ export const SignUpForm = styled("form")(() => ({
 
 export const SignUpInput = styled(TextField)(() => ({
   "& .MuiOutlinedInput-root": {
-    color: "#fff",
-    fontFamily: "Play",
     height: "60px",
+    fontFamily: "Play",
+    color: "#fff",
+
     "& .MuiOutlinedInput-notchedOutline": {
-      fontFamily: "Play",
       borderColor: "rgba(255, 255, 255, 0.5)",
       borderWidth: "1px",
       borderRadius: "15px",
+      fontFamily: "Play",
     },
 
     "&.Mui-focused": {
       "& .MuiOutlinedInput-notchedOutline": {
-        fontFamily: "Play",
         borderColor: "rgba(255, 255, 255, 1)",
         borderWidth: "2px",
+        fontFamily: "Play",
       },
     },
 
     "&:hover:not(.Mui-focused)": {
       "& .MuiOutlinedInput-notchedOutline": {
-        fontFamily: "Play",
         borderColor: "rgba(255, 255, 255, 0.8)",
+        fontFamily: "Play",
       },
     },
   },
@@ -66,25 +80,25 @@ export const SignUpInput = styled(TextField)(() => ({
     },
   },
   "& .MuiFormHelperText-root.Mui-error": {
-    fontFamily: "Play", 
-    color: "#B00020", 
-    fontSize: '16px'
+    fontFamily: "Play",
+    fontSize: "16px",
+    color: "#B00020",
   },
 }));
 
 export const SignUpFormButton = styled(CustomButton)(() => ({
   height: "60px",
   "&&": {
-    borderRadius: "15px",
     marginTop: "25px",
+    borderRadius: "15px",
     fontSize: "22px",
   },
 }));
 
 export const PasswordToggleContainer = styled("div")(() => ({
+  position: "relative",
   display: "flex",
   alignItems: "center",
-  position: "relative",
 }));
 
 export const PasswordEyeIcon = styled(IconButton)(() => ({

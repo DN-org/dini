@@ -1,11 +1,14 @@
+//Packages
 import React from "react";
+
+//Styles
 import {
   FooterContainerStyled,
   FooterLinksStyled,
   FooterLinkStyled,
+  FooterLogoLinkStyled,
   FooterLogoStyled,
-  FooterStyled,
-  FooterLogoLinkStyled
+  FooterStyled
 } from "./Footer.styled";
 
 const Footer: React.FC = () => {

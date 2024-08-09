@@ -1,15 +1,18 @@
+//Packages
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
+//Components
 import {
   SvgArrowL,
   SvgArrowR,
 } from "../../../images/SvgCarouselArrwos/SvgCarouselArrwos";
 
+//Styles
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 import {
-  ArrowsR,
   ArrowsL,
+  ArrowsR,
   ContCarousel,
   ImgCont,
 } from "./CarouselActors.styled";
@@ -29,7 +32,6 @@ const CustomPrevArrow: React.FC<ArrowProps> = ({ onClick }) => (
     {SvgArrowL}
   </ArrowsL>
 );
-
 
 const CarouselActors: React.FC = () => {
   const settings = {

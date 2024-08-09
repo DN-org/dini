@@ -1,10 +1,14 @@
+//Packages
 import React from "react";
+
+//Components
 import Comment from "./Comment/Comment";
 
+//Styles
 import {
-  CommentsStyled,
   CommentsList,
   CommentsSort,
+  CommentsStyled,
   CommentsTitleContainer,
 } from "./Comments.styled";
 
@@ -13,9 +17,7 @@ const Comments: React.FC = () => {
     <CommentsStyled>
       <CommentsTitleContainer>
         <h3>Комментарии</h3>
-        <CommentsSort>
-          Сортировка
-        </CommentsSort>
+        <CommentsSort>Сортировка</CommentsSort>
       </CommentsTitleContainer>
 
       <CommentsList>
@@ -36,7 +38,7 @@ const Comments: React.FC = () => {
           }
           rating={4}
           text={"охуенно охуенно охуенно"}
-        />  
+        />
       </CommentsList>
     </CommentsStyled>
   );

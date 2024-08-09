@@ -1,18 +1,20 @@
+//Packages
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
-//styled
-import { ArrowsR, ArrowsL,ContCarousel } from "./CarouselMovies.styled";
-
+//Components
 import {
   SvgArrowL,
   SvgArrowR,
 } from "../../../images/SvgCarouselArrwos/SvgCarouselArrwos";
 
+//Styles
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { ArrowsR, ArrowsL, ContCarousel } from "./CarouselMovies.styled";
+
 interface CarouselMoviesProps {
-    children: React.ReactNode;
-  }
+  children: React.ReactNode;
+}
 
 interface ArrowProps {
   onClick?: () => void;
@@ -30,7 +32,7 @@ const CustomPrevArrow: React.FC<ArrowProps> = ({ onClick }) => (
   </ArrowsL>
 );
 
-const CarouselMovies: React.FC<CarouselMoviesProps> = ({children}) => {
+const CarouselMovies: React.FC<CarouselMoviesProps> = ({ children }) => {
   const settings = {
     dots: false,
     infinite: true,
@@ -46,9 +48,7 @@ const CarouselMovies: React.FC<CarouselMoviesProps> = ({children}) => {
 
   return (
     <ContCarousel>
-      <Slider {...settings}>
-        {children}
-      </Slider>
+      <Slider {...settings}>{children}</Slider>
     </ContCarousel>
   );
 };

@@ -1,11 +1,14 @@
+//Packages
 import React from 'react';
 
-import { MediaContent } from './MediaPage.styled';
-
+//Components
+import Comments from './Comments/Comments';
 import Information from './Information/Information';
 import Player from './Player/Player';
 import RelatedFilms from './RelatedFilms/RelatedFilms';
-import Comments from './Comments/Comments';
+
+//Styles
+import { MediaContent } from './MediaPage.styled';
 
 const MediaPage: React.FC = () => {
   return (

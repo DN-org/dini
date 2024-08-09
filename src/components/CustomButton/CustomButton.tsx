@@ -1,5 +1,8 @@
-import React from "react";
+//Packages
 import { ButtonProps } from "@mui/material"; // Assuming you're using Material-UI, adjust the import as needed
+import React from "react";
+
+//Styles
 import { CustomButtonStyled } from "./CustomButton.styled";
 
 interface CustomButtonProps extends ButtonProps {

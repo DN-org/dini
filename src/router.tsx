@@ -3,8 +3,6 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 
 //Pages
-import Footer from "./components/navigations/Footer/Footer";
-import Header from "./components/navigations/Header/Header";
 import AdminPage from "./components/pages/AdminPage/AdminPage";
 import CataloquePage from "./components/pages/CataloquePage/CataloquePage";
 import DevPage from "./components/pages/DevPage/DevPage";
@@ -13,6 +11,10 @@ import MediaPage from "./components/pages/MediaPage/MediaPage";
 import ProfilePage from "./components/pages/ProfilePage/ProfilePage";
 import SignInPage from "./components/pages/SignInPage/SignInPage";
 import SignUpPage from "./components/pages/SignUpPage/SignUpPage";
+
+//Components
+import Footer from "./components/navigations/Footer/Footer";
+import Header from "./components/navigations/Header/Header";
 
 export const AppRoutes: React.FC = () => {
   return (

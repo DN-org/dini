@@ -1,40 +1,56 @@
-import { styled } from "@mui/system";
+//Packages
+import styled from "styled-components";
 import { TextField } from "@mui/material";
 
 export const SearchFieldStyled = styled(TextField)(() => ({
+  //Позиционирование
   display: "flex",
   alignSelf: "center",
+  //Размеры
   width: "100%",
   maxWidth: "400px",
 
   "& .MuiInputBase-input": {
+    //Размеры
     height: "10px",
-    color: 'white',
+    //Типография
+    color: "white",
     "&::placeholder": {
-      color: "white", // Цвет placeholder
+      //Типография
+      color: "white",
     },
   },
 
   "& .MuiOutlinedInput-root": {
+    //Размеры
     width: "350px",
+    //Границы
     borderRadius: "8px",
+    //Фон и декор
     background: "rgba(255,255,255,0.05)",
 
     "& fieldset": {
-      borderColor: "transparent", // Цвет рамки по умолчанию
+      //Границы
+      borderColor: "transparent",
     },
     "&:hover fieldset": {
-      borderColor: "rgba(255,255,255,0.5)", // Цвет рамки при наведении
+      //Границы
+      borderColor: "rgba(255,255,255,0.5)",
+      //Фон и декор
       background: "rgba(255,255,255,0.1)",
     },
     "&.Mui-focused fieldset": {
-      borderColor: "rgba(255,255,255,0.5)", // Цвет рамки при фокусе
+      //Границы
+      borderColor: "rgba(255,255,255,0.5)",
+      //Фон и декор
       background: "rgba(255,255,255,0.1)",
     },
   },
 
   "& .MuiInputAdornment-root": {
+    //Позиционирование
     marginRight: "0",
+    //Типография
     color: "white",
   },
 }));

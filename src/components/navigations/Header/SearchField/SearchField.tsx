@@ -1,6 +1,9 @@
-import { InputAdornment } from "@mui/material";
-import { SearchFieldStyled } from "./SearchField.styled";
+//Packages
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
+import { InputAdornment } from "@mui/material";
+
+//Styles
+import { SearchFieldStyled } from "./SearchField.styled";
 
 const SearchField: React.FC = () => {
   return (

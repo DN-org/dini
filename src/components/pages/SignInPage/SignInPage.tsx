@@ -1,4 +1,9 @@
+//Packages
+import { Visibility, VisibilityOff } from "@mui/icons-material";
+import { InputAdornment } from "@mui/material";
 import React, { useState } from "react";
+
+//Styles
 import {
   PasswordEyeIcon,
   SignInForm,
@@ -6,8 +11,6 @@ import {
   SignInInput,
   SignInPageStyled,
 } from "./SignInPage.styled";
-import { InputAdornment } from "@mui/material";
-import { Visibility, VisibilityOff } from "@mui/icons-material";
 
 const SignInPage: React.FC = () => {
   const [showPassword, setShowPassword] = useState(false);

@@ -1,10 +1,14 @@
+//Packages
 import React from "react";
 
-import {
-  HomePageStyled,
-  HomePageCarouselSlideContainer,
-} from "./HomePage.styled";
+//Components
 import CustomCarousel from "../../Carousel/CustomCarousel/CustomCarousel";
+
+//Styles
+import {
+  HomePageCarouselSlideContainer,
+  HomePageStyled,
+} from "./HomePage.styled";
 
 const HomePage: React.FC = () => {
   return (
