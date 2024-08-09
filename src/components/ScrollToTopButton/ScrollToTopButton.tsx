@@ -1,5 +1,11 @@
+//Packages
 import React, { useState, useEffect, ReactNode } from "react";
-import { ScrollToTopButtonArrow, ScrollToTopButtonStyled } from "./ScrollToTopButton.styled";
+
+//Styles
+import {
+  ScrollToTopButtonArrow,
+  ScrollToTopButtonStyled,
+} from "./ScrollToTopButton.styled";
 
 interface ScrollToTopButtonProps {
   children: ReactNode;
@@ -34,7 +40,7 @@ const ScrollToTopButton: React.FC<ScrollToTopButtonProps> = ({ children }) => {
 
   return (
     <div>
-      <ScrollToTopButtonStyled 
+      <ScrollToTopButtonStyled
         onClick={scrollToTop}
         style={{ display: isVisible ? "flex" : "none" }}
         title="Вернуться наверх"

@@ -1,3 +1,27 @@
+#React Commands
+
+### `npm start` Запуск проекта
+
+###npm i
+
+Установка недостающих пакетов
+
+###npm install npmName --save-dev
+
+Установка пакетов
+
+###npm uninstall npmName --save-dev
+
+Удаление пакетов
+
+#Git Commands
+
+###git status
+
+Просмотр изменений
+
+###git
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

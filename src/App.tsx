@@ -1,8 +1,13 @@
-import React, { Fragment } from "react";
+//Packages
+import { Fragment } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
-import { AppRoutes } from "./router";
-import { GlobalStyles } from "./styles/global.styled";
+
+//Components
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
+import { AppRoutes } from "./router";
+
+//Styles
+import { GlobalStyles } from "./styles/global.styled";
 
 function App() {
   return (
