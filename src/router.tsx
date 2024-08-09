@@ -5,6 +5,11 @@ import MoviesPage from './components/pages/MoviesPage/MoviesPage';
 import Footer from './components/navigations/Footer/Footer';
 import Header from './components/navigations/Header/Header';
 import ProfilePage from './components/pages/ProfilePage/ProfilePage';
+import DevPage from './components/pages/DevPage/DevPage';
+import SignInPage from './components/pages/SignInPage/SignInPage';
+import SignUpPage from './components/pages/SignUpPage/SignUpPage';
+import AdminPage from './components/pages/AdminPage/AdminPage';
+import CataloquePage from './components/pages/CataloquePage/CataloquePage';
 
 export const AppRoutes: React.FC = () => {
   return (
@@ -12,11 +17,16 @@ export const AppRoutes: React.FC = () => {
       <Header/>
 
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<DevPage />} />
+        <Route path="/SignIn" element={<SignInPage />} />
+        <Route path="/SignUp" element={<SignUpPage />} />
         <Route path="/Movies" element={<MoviesPage />} />
+        <Route path="/Home" element={<HomePage />} />
+        <Route path="/Admin" element={<AdminPage />} />
         <Route path="/Profile" element={<ProfilePage />} />
+        <Route path="/Cataloque" element={<CataloquePage />} />
       </Routes>
-
+      
       <Footer/>
     </>
   );
