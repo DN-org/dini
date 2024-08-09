@@ -1,49 +1,42 @@
-import React, { useState } from "react";
-import { StarRatingStyled, StarCont, StarIcon } from "./StarRating.styled";
+import React, { useState } from 'react';
+import Rating from '@mui/material/Rating';
+import { styled } from '@mui/material/styles';
 
+// Типы пропсов для нашего компонента
 interface StarRatingProps {
-  initialRating?: number;
-  onRatingChange?: (rating: number) => void;
+  initialValue?: number; // Начальная оценка, необязательное свойство
+  fontSize: string;
+  onChange: (newValue: number | null) => void; // Функция обратного вызова для изменения оценки
 }
 
-const StarRating: React.FC<StarRatingProps> = ({
-  initialRating = 0,
-  onRatingChange,
-}) => {
-  const [rating, setRating] = useState(initialRating);
-  const [hover, setHover] = useState(0);
+// Стилизованный компонент Rating с использованием MUI styled
+const StarRatingStyled = styled(Rating)<{ fontSize: string }>(({ fontSize }) => ({
+  fontSize,
+  '& .MuiRating-iconFilled': {
+    color: 'gold',
+  },
+  '& .MuiRating-iconEmpty': {
+    color: 'white',
+  },
+}));
 
-  const handleClick = (value: number) => {
-    setRating(value);
-    if (onRatingChange) {
-      onRatingChange(value);
-    }
-  };
+// Компонент Rating
+const StarRating: React.FC<StarRatingProps> = ({ initialValue = 0, fontSize, onChange }) => {
+  const [value, setValue] = useState<number | null>(initialValue);
 
-  const handleMouseEnter = (value: number) => {
-    setHover(value);
-  };
-
-  const handleMouseLeave = () => {
-    setHover(0);
+  const handleChange = (event: React.ChangeEvent<{}>, newValue: number | null) => {
+    setValue(newValue);
+    onChange(newValue);
   };
 
   return (
-    <StarRatingStyled>
-      {[1, 2, 3, 4, 5].map((star) => (
-        <StarCont>
-          <StarIcon
-          key={star}
-          $filled={star <= (hover || rating)}
-          onClick={() => handleClick(star)}
-          onMouseEnter={() => handleMouseEnter(star)}
-          onMouseLeave={handleMouseLeave}
-        >
-          ★
-        </StarIcon>
-        </StarCont>
-      ))}
-    </StarRatingStyled>
+    <StarRatingStyled
+      value={value}
+      onChange={handleChange}
+      precision={1} 
+      fontSize={fontSize} 
+      max={5}
+    />
   );
 };
 

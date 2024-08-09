@@ -1,10 +1,8 @@
-//Packages
-import StarIcon from "@mui/icons-material/Star";
-import React from "react";
+//Components
+import StarRatingDisplay from "../../../../StarRatingDisplay/StarRatingDisplay";
 
 //Styles
 import {
-  CommentStarContainer,
   CommentStyled,
   CommentText,
   CommentUserInfoChildContainer,
@@ -32,14 +30,7 @@ const Comment: React.FC<CommentProps> = ({
         <CommentUserLogoContainer src={userAvatar} />
         <CommentUserInfoChildContainer>
           <CommentUserName>{userName}</CommentUserName>
-          <CommentStarContainer>
-            {Array.from({ length: 5 }, (_, index) => (
-              <StarIcon
-                key={index}
-                style={{ color: index < rating ? "gold" : "gray" }}
-              />
-            ))}
-          </CommentStarContainer>
+          <StarRatingDisplay value={4.5} fontSize={"14"}/>
         </CommentUserInfoChildContainer>
       </CommentUserInfoContainer>
       <CommentText>

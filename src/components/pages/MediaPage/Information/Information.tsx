@@ -28,10 +28,11 @@ import {
 import SVGIMDb from "../../../../images/SVGIMDb";
 import SVGKinopoisk from "../../../../images/SVGKinopoisk";
 import CarouselActors from "../../../Carousel/CarouselActors/CarouselActors";
-import StarRating from "../../../StarRating/StarRating";
+import RatingDisplay from "../../../StarRatingDisplay/StarRatingDisplay";
 
 //SVG
 import CreateNewFolderOutlinedIcon from "@mui/icons-material/CreateNewFolderOutlined";
+
 
 const Information: React.FC = () => {
   const [modalActive, setModalActive] = useState(false);
@@ -66,7 +67,7 @@ const Information: React.FC = () => {
             </div>
 
             <StarCont>
-              <StarRating />
+              <RatingDisplay value={4.3} fontSize={"70px"}></RatingDisplay>
             </StarCont>
 
             <RatingChildContainer>

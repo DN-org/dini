@@ -44,11 +44,6 @@ export const CommentUserLogoContainer = styled("img")(() => ({
 
 export const CommentUserName = styled("p")(() => ({}));
 
-export const CommentStarContainer = styled("div")(() => ({
-  //Размеры
-  height: "25px",
-}));
-
 export const CommentText = styled("div")(() => ({
   //Позиционирование
   padding: "25px 50px",

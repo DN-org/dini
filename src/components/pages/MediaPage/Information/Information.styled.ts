@@ -88,6 +88,7 @@ export const RatingCount = styled("p")(() => ({}));
 
 export const StarCont = styled("div")(() => ({
   //Позиционирование
+  paddingRight: '25px',
   display: "grid",
   gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr",
   //Размеры
