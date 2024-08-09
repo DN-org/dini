@@ -8,7 +8,7 @@ const DevPage: React.FC = () => {
         <Link to={"/Admin"}>/Admin</Link>
         <Link to={"/Cataloque"}>/Cataloque</Link>
         <Link to={"/Home"}>/Home</Link>
-        <Link to={"/Movies"}>/Movies</Link>
+        <Link to={"/Media"}>/Media</Link>
         <Link to={"/Profile"}>/Profile</Link>
         <Link to={"/SignIn"}>/SignIn</Link>
         <Link to={"/SignUp"}>/SignUp</Link>

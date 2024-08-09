@@ -13,7 +13,7 @@ export const CustomButtonStyled = styled(Button)(() => ({
     fontSize: '16px',
     padding: '10px 50px',
     fontWeight: 'bold',
-    
+    fontFamily: "Play",
     "&:hover": {
       border: "0px solid rgba(255, 255, 255, 0.5)",
       background: "rgba(255, 255, 255, 0.05)",

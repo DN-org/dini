@@ -1,33 +1,33 @@
-import { Route, Routes } from 'react-router-dom';
-import React from 'react';
-import HomePage from './components/pages/HomePage/HomePage';
-import MoviesPage from './components/pages/MoviesPage/MoviesPage';
-import Footer from './components/navigations/Footer/Footer';
-import Header from './components/navigations/Header/Header';
-import ProfilePage from './components/pages/ProfilePage/ProfilePage';
-import DevPage from './components/pages/DevPage/DevPage';
-import SignInPage from './components/pages/SignInPage/SignInPage';
-import SignUpPage from './components/pages/SignUpPage/SignUpPage';
-import AdminPage from './components/pages/AdminPage/AdminPage';
-import CataloquePage from './components/pages/CataloquePage/CataloquePage';
+import { Route, Routes } from "react-router-dom";
+import React from "react";
+import HomePage from "./components/pages/HomePage/HomePage";
+import Footer from "./components/navigations/Footer/Footer";
+import Header from "./components/navigations/Header/Header";
+import ProfilePage from "./components/pages/ProfilePage/ProfilePage";
+import DevPage from "./components/pages/DevPage/DevPage";
+import SignInPage from "./components/pages/SignInPage/SignInPage";
+import SignUpPage from "./components/pages/SignUpPage/SignUpPage";
+import AdminPage from "./components/pages/AdminPage/AdminPage";
+import CataloquePage from "./components/pages/CataloquePage/CataloquePage";
+import MediaPage from "./components/pages/MediaPage/MediaPage";
 
 export const AppRoutes: React.FC = () => {
   return (
     <>
-      <Header/>
+      <Header />
 
       <Routes>
         <Route path="/" element={<DevPage />} />
         <Route path="/SignIn" element={<SignInPage />} />
         <Route path="/SignUp" element={<SignUpPage />} />
-        <Route path="/Movies" element={<MoviesPage />} />
+        <Route path="/Media" element={<MediaPage />} />
         <Route path="/Home" element={<HomePage />} />
         <Route path="/Admin" element={<AdminPage />} />
         <Route path="/Profile" element={<ProfilePage />} />
         <Route path="/Cataloque" element={<CataloquePage />} />
       </Routes>
-      
-      <Footer/>
+
+      <Footer />
     </>
   );
 };

@@ -1,21 +1,21 @@
 import React from 'react';
 
-import { Content } from './MoviesPage.styled';
+import { MediaContent } from './MediaPage.styled';
 
 import Information from './Information/Information';
 import Player from './Player/Player';
 import RelatedFilms from './RelatedFilms/RelatedFilms';
 import Comments from './Comments/Comments';
 
-const MoviesPage: React.FC = () => {
+const MediaPage: React.FC = () => {
   return (
-    <Content>
+    <MediaContent>
       <Information/>
       <Player/>
       <RelatedFilms/>
       <Comments/>
-    </Content>
+    </MediaContent>
   );
 };
 
-export default MoviesPage;
+export default MediaPage;
