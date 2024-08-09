@@ -7,6 +7,7 @@ import CarouselMovies from "../../../Carousel/CarouselMovies/CarouselMovies";
 const RelatedFilms: React.FC = () => {
   return (
     <RelatedFilmsContainer>
+      <h3>Связанное</h3>
       <CarouselMovies>
         <ImgContainer>
           <img

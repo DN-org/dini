@@ -121,6 +121,7 @@ export const DescriptionStyled = styled("div")(() => ({
   gridTemplateRows: 'auto auto',
   padding: '50px',
   minWidth: '1280px',
-  rowGap: '25px'
+  rowGap: '25px',
+  borderBottom: '1px solid rgba(255,255,255, .15)', 
 }));
 
