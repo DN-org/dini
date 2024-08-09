@@ -38,6 +38,47 @@
 
 # Порядок стилей
 
+### Позиционирование
+
+`position`
+`top` | `right` | `bottom` | `left`
+`margin`
+`padding`
+`zIndex`
+`display`
+`alignContent` | `justifyContent`
+
+### Размеры
+
+`width` | `height`
+`minWidth` | `minHeight`
+`maxWidth` | `maxHeight`
+
+### Границы
+
+`border`
+`borderColor`
+`borderRadius`
+`outline`
+`overflow`
+`clip-path`
+`object-fit`
+
+### Типография
+
+`fontFamily`
+`fontSize`
+`fontWeight`
+`fontStyle`
+`lineHeight`
+`letterSpacing` | `wordSpacing`
+`textAlign`
+`textDecoration`
+`color`
+`textTransform`
+`textShadow`
+`whitespace`
+
 ### Фон и декор
 
 `background` | `backgroundColor` | `backgroundImage`
