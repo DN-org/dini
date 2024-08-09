@@ -2,11 +2,7 @@ import React from "react";
 import { SignUpPageStyled } from "./SignUpPage.styled";
 
 const SignUpPage: React.FC = () => {
-  return (
-    <SignUpPageStyled>
-
-    </SignUpPageStyled>
-  );
+  return <SignUpPageStyled>SignUpPage</SignUpPageStyled>;
 };
 
 export default SignUpPage;

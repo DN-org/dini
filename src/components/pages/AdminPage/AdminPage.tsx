@@ -2,11 +2,7 @@ import React from "react";
 import { AdminPageStyled } from "./AdminPage.styled";
 
 const AdminPage: React.FC = () => {
-  return (
-    <AdminPageStyled>
-
-    </AdminPageStyled>
-  );
+  return <AdminPageStyled>AdminPage</AdminPageStyled>;
 };
 
 export default AdminPage;
