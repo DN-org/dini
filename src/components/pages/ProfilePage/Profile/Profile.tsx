@@ -13,6 +13,7 @@ import CustomButton from "../../../CustomButton/CustomButton";
 const Profile: React.FC = () => {
   return (
     <ProfileContainer>
+
       <AvatarContainer>
         <img
           src="https://sun9-3.userapi.com/impg/sS8R9BM4LfjTEWCifue2R4xTMA3BB4cc2g-85g/vvEXGkaj5NE.jpg?size=435x660&quality=95&sign=3f2f1ad440befd13a047ce89c9840594&type=album"
@@ -50,6 +51,7 @@ const Profile: React.FC = () => {
         </ViewedContent>
         <RegistrationDate><h3>Дата регистрации 02.08.2024</h3></RegistrationDate>
       </ViewedContainer>
+      
     </ProfileContainer>
   );
 };
