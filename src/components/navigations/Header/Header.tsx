@@ -3,7 +3,6 @@ import React from "react";
 
 //Components
 import SearchField from "./SearchField/SearchField";
-import MiniProfile from "./MiniProfile/MiniProfile";
 
 //Styled
 import {
@@ -12,6 +11,8 @@ import {
   HeaderStyled,
   HeaderLogoLinkStyled,
 } from "./Header.styled";
+
+//Images
 import MenuButton from "./MenuButton/MenuButton";
 
 const Header: React.FC = () => {
