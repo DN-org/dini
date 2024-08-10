@@ -8,6 +8,7 @@ import { DevPageStyled } from "./DevPage.styled";
 const DevPage: React.FC = () => {
   return (
     <DevPageStyled>
+        <Link to={"/Test"}>/Test</Link>
         <Link to={"/Admin"}>/Admin</Link>
         <Link to={"/Cataloque"}>/Cataloque</Link>
         <Link to={"/Actor"}>/Actor</Link>
