@@ -4,7 +4,8 @@ export const ProfileContainer = styled('div')(() => ({
     display:'grid',
     gridTemplateColumns:'1fr 1fr',
     justifyItems:'center',
-    padding:'0 0 40px',
+    minHeight: "720px",
+    padding: "100px 0",
 }));
 
 export const AvatarContainer = styled('div')(() => ({
