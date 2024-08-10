@@ -17,11 +17,9 @@ export const FooterStyled = styled("footer")(() => ({
   height: "100px",
   minWidth: "1280px",
   //Границы
-  borderTop: "1px",
-  borderColor: "#FFF",
+  borderTop: "1px solid rgba(255, 255, 255, .15)",
   //Фон и декор
   background: "black",
-  boxShadow: "15px 0px 20px 11px rgba(255, 255, 255, 0.1)",
 }));
 
 export const FooterContainerStyled = styled("div")(() => ({

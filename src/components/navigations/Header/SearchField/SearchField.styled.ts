@@ -4,11 +4,10 @@ import { TextField } from "@mui/material";
 
 export const SearchFieldStyled = styled(TextField)(() => ({
   //Позиционирование
-  display: "flex",
+  display: "block",
   alignSelf: "center",
   //Размеры
-  width: "100%",
-  maxWidth: "400px",
+  width: "750px",
 
   "& .MuiInputBase-input": {
     //Размеры
@@ -23,7 +22,8 @@ export const SearchFieldStyled = styled(TextField)(() => ({
 
   "& .MuiOutlinedInput-root": {
     //Размеры
-    width: "350px",
+    display: 'flex',
+    width: "100%",
     //Границы
     borderRadius: "8px",
     //Фон и декор

@@ -10,8 +10,7 @@ export const RelatedFilmsContainer = styled("div")(() => ({
   //Размеры
   width: "1280px",
   //Границы
-  borderBottom: "1px",
-  borderColor: 'solid rgba(255,255,255, .15)',
+  borderBottom: "1px solid rgba(255,255,255, .15)",
   //Фон и декор
   background: "black",
 }));

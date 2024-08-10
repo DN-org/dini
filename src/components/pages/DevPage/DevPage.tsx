@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 //Styles
 import { DevPageStyled } from "./DevPage.styled";
 
-
 const DevPage: React.FC = () => {
   return (
     <DevPageStyled>

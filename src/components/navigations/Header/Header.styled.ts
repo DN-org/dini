@@ -11,7 +11,7 @@ export const HeaderStyled = styled("header")(() => ({
   top: "0",
   zIndex: "100",
   display: "grid",
-  gridTemplateColumns: "50px 150px 250px 350px 200px",
+  gridTemplateColumns: "auto 150px auto auto",
   columnGap: "50px",
   alignContent: "center",
   justifyContent: "center",
@@ -21,12 +21,10 @@ export const HeaderStyled = styled("header")(() => ({
   width: "100%",
   minWidth: "1280px",
   //Границы
-  borderBottom: "1px",
-  borderColor: "#FFF",
+  border:"1px solid rgba(255, 255, 255, 0.15)",
   overflow: "hidden",
   //Фон и декор
   backgroundColor: "#000",
-  boxShadow: "0px 15px 20px 11px rgba(255, 255, 255, 0.1)",
 }));
 
 export const HeaderLogoLinkStyled = styled(Link)(() => ({

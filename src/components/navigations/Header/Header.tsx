@@ -2,7 +2,6 @@
 import React from "react";
 
 //Components
-import HamburgerButton from "./HamburgerMenuButton/HamburgerMenuButton";
 import SearchField from "./SearchField/SearchField";
 import MiniProfile from "./MiniProfile/MiniProfile";
 
@@ -13,15 +12,15 @@ import {
   HeaderStyled,
   HeaderLogoLinkStyled,
 } from "./Header.styled";
+import MenuButton from "./MenuButton/MenuButton";
 
 const Header: React.FC = () => {
   return (
     <HeaderStyled>
-      <HamburgerButton />
+      <MenuButton />
       <HeaderLogoLinkStyled to="/">
         <HeaderLogoStyled />
       </HeaderLogoLinkStyled>
-      <div />
       <SearchField />
       <HeaderAuthLinkStyled to="/Profile">Войти</HeaderAuthLinkStyled>
       {/* <MiniProfile/> */}
