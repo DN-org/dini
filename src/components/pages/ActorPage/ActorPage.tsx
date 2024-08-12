@@ -2,10 +2,17 @@
 import React from "react";
 
 //Styles
-import { ActorPageStyled } from "./ActorPage.styled";
+import { ActorСontent } from "./ActorPage.styled";
+
+//component
+import ActorProfile from "./ActorProfile/ActorProfile";
 
 const ActorPage: React.FC = () => {
-  return <ActorPageStyled>AdminPage</ActorPageStyled>;
+  return (
+    <ActorСontent>
+      <ActorProfile/>
+    </ActorСontent>
+  );
 };
 
 export default ActorPage;
