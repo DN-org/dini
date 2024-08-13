@@ -2,6 +2,7 @@
 import styled from "styled-components";
 
 export const ArrowsR = styled("button")(() => ({
+  all: "unset",
   //Позиционирование
   position: "absolute",
   top: "110px",
@@ -16,11 +17,11 @@ export const ArrowsR = styled("button")(() => ({
   //Фон и декор
   backdropFilter: "invert(40%)",
   //Анимация и трансформация
-  all: "unset",
   cursor: "pointer",
 }));
 
 export const ArrowsL = styled("button")(() => ({
+  all: "unset",
   //Позиционирование
   position: "absolute",
   top: "110px",
@@ -36,7 +37,6 @@ export const ArrowsL = styled("button")(() => ({
   backgroundColor: "rgb(0,0,0,.2)",
   backdropFilter: "invert(40%)",
   //Анимация и трансформация
-  all: "unset",
   cursor: "pointer",
 }));
 
