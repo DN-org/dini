@@ -4,7 +4,7 @@ import { Route, Routes } from "react-router-dom";
 
 //Pages
 import AdminPage from "./components/pages/AdminPage/AdminPage";
-import CataloquePage from "./components/pages/CataloquePage/CataloquePage";
+import CataloquePage from "./components/pages/CataloquePage/CatalogPage";
 import DevPage from "./components/pages/DevPage/DevPage";
 import HomePage from "./components/pages/HomePage/HomePage";
 import MediaPage from "./components/pages/MediaPage/MediaPage";
