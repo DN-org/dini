@@ -35,17 +35,23 @@
       "not op_mini all"
     ],
     "development": [
-      "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
     ]
   },
   "devDependencies": {
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
     "@mui/icons-material": "^5.16.6",
+    "@mui/lab": "^5.0.0-alpha.173",
     "@mui/material": "^5.16.6",
     "@mui/styled-engine-sc": "^6.0.0-alpha.18",
+    "@types/react-slick": "^0.23.13",
     "axios": "^1.7.3",
     "react-router-dom": "^6.26.0",
-    "styled-components": "^6.1.12"
+    "react-slick": "^0.30.2",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^6.1.12",
+    "swiper": "^11.1.9"
   }
 }

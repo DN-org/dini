@@ -1,18 +1,25 @@
-import React, { Fragment } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import { AppRoutes } from './router';
-import { GlobalStyles } from './styles/global.styled';
+//Packages
+import { Fragment } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+
+//Components
+import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
+import { AppRoutes } from "./router";
+
+//Styles
+import { GlobalStyles } from "./styles/global.styled";
 
 function App() {
   return (
     <Fragment>
-      <GlobalStyles />
-      <Router>
+      <ScrollToTopButton>
         <GlobalStyles />
-        <AppRoutes />
-      </Router>
+        <Router>
+          <GlobalStyles />
+          <AppRoutes />
+        </Router>
+      </ScrollToTopButton>
     </Fragment>
   );
 }
-
 export default App;

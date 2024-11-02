@@ -1,18 +1,30 @@
-import React from 'react';
-import HamburgerButton from '../../HamburgerMenuButton/HamburgerMenuButton';
+//Packages
+import React from "react";
+
+//Components
+import SearchField from "./SearchField/SearchField";
+
+//Styled
 import {
+  HeaderAuthLinkStyled,
   HeaderLogoStyled,
   HeaderStyled,
-} from './Header.styled';
+  HeaderLogoLinkStyled,
+} from "./Header.styled";
 
-const Logo: string = require('../../../images/logo_white.svg').default;
+//Images
+import MenuButton from "./MenuButton/MenuButton";
 
 const Header: React.FC = () => {
   return (
     <HeaderStyled>
-        <HamburgerButton />
-        <HeaderLogoStyled src={Logo} />
-        <div />
+      <MenuButton />
+      <HeaderLogoLinkStyled to="/">
+        <HeaderLogoStyled />
+      </HeaderLogoLinkStyled>
+      <SearchField />
+      <HeaderAuthLinkStyled to="/Profile">Войти</HeaderAuthLinkStyled>
+      {/* <MiniProfile/> */}
     </HeaderStyled>
   );
 };

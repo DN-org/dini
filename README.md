@@ -1,46 +1,182 @@
-# Getting Started with Create React App
+# React Commands
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### `npm start` Запуск проекта
 
-## Available Scripts
+### `npm i` Установка недостающих пакетов
 
-In the project directory, you can run:
+### `npm install npmName --save-dev` Установка пакетов
 
-### `npm start`
+### `npm uninstall npmName --save-dev` Удаление пакетов
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Git Commands
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### `git config --global user.name "UserName"` Вход в аккаунт - Логин
 
-### `npm test`
+### `git config --global user.email "dev@mail.com"` Вход в аккаунт - email
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `git config --global credential.helper cache` Кэширование аккаунта
 
-### `npm run build`
+### `git status` Просмотр изменений
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `git add .` Добавление сделанных изменений для commit
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `git commit -m "Сделал ReadMe"` Создание commit с сообщением
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `git push origin branchName` Первая отправка commit
 
-### `npm run eject`
+### `git push` Отправка commita
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### `git pull` Получение изменений репозитория
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `git checkout branchName` Смена ветки
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### `git checkout -b branchName` Создание ветки
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### `git fetch` Получение веток репозитория
 
-## Learn More
+### `git reset --hard` Сброс изменений до последнего commit
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Порядок импортов
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+`Packages`
+
+`Components`
+
+`Styles`
+
+# Порядок стилей
+
+### Позиционирование
+
+`position`
+
+`top` | `right` | `bottom` | `left`
+
+`margin`
+
+`padding`
+
+`zIndex`
+
+`display`
+
+`alignContent` | `justifyContent`
+
+### Размеры
+
+`width` | `height`
+
+`minWidth` | `minHeight`
+
+`maxWidth` | `maxHeight`
+
+### Границы
+
+`border`
+
+`borderColor`
+
+`borderRadius`
+
+`outline`
+
+`overflow`
+
+`clip-path`
+
+`object-fit`
+
+### Типография
+
+`fontFamily`
+
+`fontSize`
+
+`fontWeight`
+
+`fontStyle`
+
+`lineHeight`
+
+`letterSpacing` | `wordSpacing`
+`textAlign`
+
+`textDecoration`
+
+`color`
+
+`textTransform`
+
+`textShadow`
+
+`whitespace`
+
+### Фон и декор
+
+`background` | `backgroundColor` | `backgroundImage`
+
+`backgroundPosition` | `backgroundRepeat` | `backgroundSize`
+
+`boxShadow`
+
+`opacity`
+
+`filter`
+
+### Анимация и трансформация
+
+`transition` | `animation`
+
+`transform`
+
+`cursor` | `pointerEvents`
+
+`userSelect` | `resize`
+
+`visibility` | `content`
+
+## Псевдоклассы взаимодействия (интерактивные состояния):
+
+`:hover`
+
+`:focus`
+
+`:active`
+
+### Псевдоклассы положения:
+
+`:first-child`
+
+`:last-child`
+
+`:nth-child(), :nth-of-type()`
+
+`:nth-last-child()`
+
+### Псевдоклассы формы:
+
+`:checked`
+
+`:disabled`
+
+`:enabled`
+
+`:required`
+
+`:valid, :invalid`
+
+### Псевдоклассы внешнего состояния:
+
+`:empty`
+
+`:not()`
+
+`:root`
+
+`:target`
+
+### Псевдоэлементы (как завершение стиля):
+
+`::before`
+
+`::after`
