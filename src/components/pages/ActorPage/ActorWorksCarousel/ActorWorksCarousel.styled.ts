@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const RelatedFilmsContainer = styled("div")(() => ({
   //Позиционирование
-  padding: "50px 50px",
+  padding: "5px 50px 0",
   display: "flex",
   flexDirection: "column",
   rowGap: "25px",

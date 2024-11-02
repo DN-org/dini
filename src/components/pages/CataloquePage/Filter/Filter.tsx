@@ -2,14 +2,16 @@
 import React from "react";
 
 //Components
-import {FilterСontent,FilterContainer} from './Filter.styled'
+import {FilterСontent,FilterContainer,FilterName} from './Filter.styled'
 
 const Filter: React.FC = () => {
   return (
     <FilterСontent>
-        <FilterContainer>
-            
-        </FilterContainer>
+      <FilterContainer>
+        <FilterName>
+          Фильтры
+        </FilterName>
+      </FilterContainer>
     </FilterСontent>
   );
 };

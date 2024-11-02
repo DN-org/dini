@@ -2,7 +2,7 @@ import styled from "styled-components";export const ProfileActorContainer = styl
     display:'grid',
     gridTemplateColumns:'0.7fr 1fr',
     justifyItems:'center',
-    minHeight: "720px",
+    minHeight: "620px",
     padding: "30px 0",
 }));
 
